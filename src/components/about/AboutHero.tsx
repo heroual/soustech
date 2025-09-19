@@ -34,10 +34,7 @@ const AboutHero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins" style={{ color: 'white' }}>
-            Pourquoi Choisir
-            <span className="block">
-              SoussTech ?
-            </span>
+            Pourquoi Choisir SoussTech ?
           </h1>
         </motion.div>
 

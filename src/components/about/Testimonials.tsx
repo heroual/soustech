@@ -12,49 +12,49 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Marie Dubois",
-      role: "Propriétaire de maison",
-      location: "Paris 16ème",
+      name: "Fatima Zahraoui",
+      role: "Propriétaire de villa",
+      location: "Casablanca",
       content: "L'installation FTTR de SoussTech a révolutionné notre quotidien ! Internet ultra-rapide dans toutes les pièces sans aucun perçage. L'équipe est professionnelle et l'installation a été réalisée en une matinée. Parfait !",
       rating: 5,
       service: "FTTR",
-      avatar: "MD"
+      avatar: "FZ"
     },
     {
-      name: "Pierre Martin",
-      role: "Gérant de café",
-      location: "Lyon 2ème",
+      name: "Ahmed El Fassi",
+      role: "Gérant de restaurant",
+      location: "Marrakech",
       content: "Les caméras de surveillance installées par SoussTech nous donnent une tranquillité d'esprit totale. La qualité d'image est exceptionnelle et l'application mobile très intuitive. Support technique toujours disponible.",
       rating: 5,
       service: "Sécurité",
-      avatar: "PM"
+      avatar: "AE"
     },
     {
-      name: "Sophie Laurent",
+      name: "Sara Benani",
       role: "Architecte d'intérieur",
-      location: "Marseille",
+      location: "Rabat",
       content: "La solution Smart Home de SoussTech s'intègre parfaitement dans mes projets. Mes clients adorent pouvoir contrôler éclairage, chauffage et sécurité depuis leur smartphone. Installation invisible et très esthétique.",
       rating: 5,
       service: "Smart Home",
-      avatar: "SL"
+      avatar: "SB"
     },
     {
-      name: "David Chen",
-      role: "Directeur IT",
-      location: "Toulouse",
+      name: "Youssef Alaoui",
+      role: "Directeur IT, Maroc Telecom",
+      location: "Rabat",
       content: "SoussTech a optimisé notre infrastructure réseau et intégré des solutions IoT innovantes. Leur expertise technique est remarquable et le support 24/7 nous assure une continuité de service parfaite.",
       rating: 5,
       service: "Réseaux IT",
-      avatar: "DC"
+      avatar: "YA"
     },
     {
-      name: "Isabelle Moreau",
+      name: "Khadija Mansouri",
       role: "Particulier",
-      location: "Bordeaux",
+      location: "Agadir",
       content: "Installation domotique complète réalisée par SoussTech. Automatisation parfaite, économies d'énergie visibles dès le premier mois. L'équipe a su s'adapter à nos besoins spécifiques. Très recommandé !",
       rating: 5,
       service: "Domotique",
-      avatar: "IM"
+      avatar: "KM"
     }
   ];
 
@@ -86,7 +86,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-white">
+    <section ref={ref} className="py-20 bg-[#070908]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -97,16 +97,13 @@ const Testimonials = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6"
           >
-            Témoignages
-            <span className="block text-blue-500">
-              de nos Clients
-            </span>
+            Témoignages de nos Clients
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
+            className="text-xl text-gray-300 font-medium max-w-3xl mx-auto"
           >
             Découvrez ce que nos clients pensent de nos services. 
             Leur satisfaction est notre plus belle récompense.
@@ -218,7 +215,7 @@ const Testimonials = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
+              className="bg-white rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
             >
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full flex items-center justify-center mr-4">
@@ -226,7 +223,7 @@ const Testimonials = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                  <p className="text-gray-700 text-sm">{testimonial.role}</p>
                 </div>
               </div>
               
@@ -236,7 +233,7 @@ const Testimonials = () => {
                 ))}
               </div>
               
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 "{testimonial.content.substring(0, 120)}..."
               </p>
             </motion.div>

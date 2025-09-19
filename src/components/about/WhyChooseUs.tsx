@@ -106,11 +106,8 @@ const WhyChooseUs = () => {
           animate={isInView ? "visible" : "hidden"}
           className="text-center mb-16"
         >
-          <h2 className="mb-6 text-center">
-            Nos Valeurs
-            <span className="block gradient-text">
-              & Engagements
-            </span>
+          <h2 className="mb-6 text-center text-[#2B3A8A]">
+            Nos Valeurs & Engagements
           </h2>
           <motion.p
             variants={itemVariants}
