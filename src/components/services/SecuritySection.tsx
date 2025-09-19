@@ -87,7 +87,7 @@ const SecuritySection = () => {
   ];
 
   return (
-    <section id="security" ref={ref} className="section-padding bg-gray-50">
+    <section id="security" ref={ref} className="section-padding bg-white">
       <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -101,7 +101,7 @@ const SecuritySection = () => {
               <Shield className="h-12 w-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
             Caméras & Sécurité Intelligente
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -190,48 +190,49 @@ const SecuritySection = () => {
           ))}
         </motion.div>
 
-        {/* Key Features */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-3xl p-8 md:p-12 text-white"
-        >
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
-                Sécurité Professionnelle
-              </h3>
-              <p className="text-xl text-blue-100 font-medium mb-6 text-center">
-                Nos solutions de surveillance combinent haute technologie et facilité d'utilisation. 
-                Installation professionnelle et support technique inclus.
-              </p>
-              <div className="flex gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
-                >
-                  Devis Gratuit
-                </Link>
-                <Link
-                  href="/portfolio"
-                  className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
-                >
-                  Voir Projets
-                </Link>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-3">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                  <span className="text-blue-100 text-sm">{feature}</span>
-                </div>
-              ))}
+        </div> {/* This closes the container-padding div */}
+
+      {/* Key Features */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="bg-[#070908] p-8 md:p-12 text-white"
+      >
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 className="text-3xl font-bold mb-6 font-poppins text-center text-white">
+              Sécurité Professionnelle
+            </h3>
+            <p className="text-xl text-blue-100 font-medium mb-6 text-center">
+              Nos solutions de surveillance combinent haute technologie et facilité d'utilisation. 
+              Installation professionnelle et support technique inclus.
+            </p>
+            <div className="flex gap-4 justify-center">
+              <Link
+                href="/contact"
+                className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
+              >
+                Devis Gratuit
+              </Link>
+              <Link
+                href="/portfolio"
+                className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
+              >
+                Voir Projets
+              </Link>
             </div>
           </div>
-        </motion.div>
-      </div>
+          <div className="grid grid-cols-1 gap-3">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
+                <span className="text-blue-100 text-sm">{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };

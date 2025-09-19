@@ -103,7 +103,7 @@ const NetworkSection = () => {
   ];
 
   return (
-    <section id="network" ref={ref} className="section-padding bg-gray-50">
+    <section id="network" ref={ref} className="section-padding bg-white">
       <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -117,7 +117,7 @@ const NetworkSection = () => {
               <Network className="h-12 w-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
             Réseaux & IT – Solutions Professionnelles
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -142,7 +142,7 @@ const NetworkSection = () => {
         >
           {networkServices.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-blue-500 w-12 h-12 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-blue-500 w-12 h-12 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
                 <service.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 text-center">{service.title}</h3>
@@ -270,14 +270,17 @@ const NetworkSection = () => {
           ))}
         </motion.div>
 
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="bg-blue-600 rounded-3xl p-6 sm:p-8 md:p-12 text-white text-center"
-        >
-          <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 font-poppins">
+        </div>
+
+      {/* CTA Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.8 }}
+        className="bg-[#070908] p-6 sm:p-8 md:p-12 text-white text-center"
+      >
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 font-poppins text-white">
             Optimisez Votre Infrastructure IT
           </h3>
           <p className="text-xl text-blue-100 font-medium mb-6 sm:mb-8 max-w-3xl mx-auto">
@@ -287,20 +290,19 @@ const NetworkSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md sm:max-w-none mx-auto">
             <Link
               href="/contact"
-              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+              className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
             >
               Audit Gratuit
             </Link>
             <Link
               href="/portfolio"
-              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+              className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
             >
               Nos Références
             </Link>
           </div>
-        </motion.div>
-      
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
 };

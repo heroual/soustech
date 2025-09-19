@@ -49,7 +49,7 @@ const FTTRSection = () => {
   ];
 
   return (
-    <section id="fttr" ref={ref} className="bg-gray-50 min-h-screen">
+    <section id="fttr" ref={ref} className="bg-white min-h-screen">
       <div className="container-padding max-w-7xl mx-auto section-padding">
         {/* Header */}
         <motion.div
@@ -63,7 +63,7 @@ const FTTRSection = () => {
               <Zap className="h-12 w-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
             Internet Ultra-Rapide – FTTR (Fiber to The Room)
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -125,7 +125,7 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
           <div className="text-center mt-8 flex justify-center">
             <Link
               href="/contact"
-              className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'black' }}
+              className="btn-futuristic-primary"
             >
               Demander un devis gratuit
             </Link>

@@ -133,7 +133,7 @@ const SmartHomeSection = () => {
   ];
 
   return (
-    <section id="smart-home" ref={ref} className="bg-gray-50">
+    <section id="smart-home" ref={ref} className="bg-white">
       <div className="container-padding max-w-7xl mx-auto section-padding-top section-padding-bottom">
         {/* Header */}
         <motion.div
@@ -147,7 +147,7 @@ const SmartHomeSection = () => {
               <Home className="h-12 w-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
             Smart Home - Maison Intelligente
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
