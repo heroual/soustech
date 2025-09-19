@@ -150,7 +150,7 @@ const SmartHomeSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
             Smart Home - Maison Intelligente
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
+          <p className="text-xl text-gray-900 max-w-4xl mx-auto leading-relaxed text-center">
             Automatisez et contrôlez votre maison depuis votre smartphone.
             Avec nos solutions domotiques, transformez votre quotidien : confort, sécurité et économies d’énergie au bout des doigts.
           </p>
@@ -207,10 +207,10 @@ const SmartHomeSection = () => {
                 <feature.icon className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2 text-center">{feature.title}</h3>
-              <p className="text-gray-600 mb-4 text-sm text-center">{feature.description}</p>
+              <p className="text-gray-900 mb-4 text-sm text-center">{feature.description}</p>
               <ul className="space-y-2">
                 {feature.features.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-center text-sm text-gray-600 text-center">
+                  <li key={itemIndex} className="flex items-center text-sm text-gray-900 text-center">
                     <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
                     {item}
                   </li>
@@ -237,7 +237,7 @@ const SmartHomeSection = () => {
                   <scenario.icon className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="text-lg font-bold text-gray-800 mb-2 text-center">{scenario.name}</h4>
-                <p className="text-gray-600 text-sm text-center">{scenario.description}</p>
+                <p className="text-gray-900 text-sm text-center">{scenario.description}</p>
               </div>
             ))}
           </div>

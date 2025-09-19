@@ -55,7 +55,7 @@ const ServicesCTA = () => {
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center text-center">
                   <CheckCircle className="h-6 w-6 text-blue-400 mr-4 flex-shrink-0" />
-                  <span className="text-gray-700">{benefit}</span>
+                  <span className="text-gray-900">{benefit}</span>
                 </div>
               ))}
             </div>
@@ -90,7 +90,7 @@ const ServicesCTA = () => {
                 </div>
                 <div className="text-center">
                   <h4 className="text-gray-900 font-semibold">WhatsApp</h4>
-                  <p className="text-gray-700 text-sm">Réponse immédiate</p>
+                  <p className="text-gray-900 text-sm mb-3">Consultation gratuite immédiate</p>
                 </div>
               </div>
             </motion.a>
@@ -106,7 +106,7 @@ const ServicesCTA = () => {
                 </div>
                 <div className="text-center">
                   <h4 className="text-gray-900 font-semibold">Email</h4>
-                  <p className="text-gray-700 text-sm">contact@soustech.ma</p>
+                  <p className="text-gray-900 text-sm mb-3">Devis détaillé par email</p>
                 </div>
               </div>
             </motion.a>

@@ -136,7 +136,7 @@ const Certifications = () => {
           </h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-900 max-w-3xl mx-auto leading-relaxed"
           >
             Notre expertise reconnue par les plus grandes marques et organismes 
             de certification du secteur technologique.
@@ -160,8 +160,8 @@ const Certifications = () => {
               <div className={`bg-gradient-to-r ${cert.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <cert.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{cert.name}</h3>
-              <p className="text-gray-600 text-sm mb-3">{cert.description}</p>
+              <h3 className="text-lg font-bold text-[#2B3A8A] mb-2">{cert.name}</h3>
+              <p className="text-gray-900 text-sm mb-3">{cert.description}</p>
               <div className={`inline-block bg-gradient-to-r ${cert.color} text-white px-3 py-1 rounded-full text-xs font-semibold`}>
                 {cert.year}
               </div>
@@ -176,7 +176,7 @@ const Certifications = () => {
           animate={isInView ? "visible" : "hidden"}
           className="mb-16"
         >
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12 font-poppins">
+          <h3 className="text-3xl font-bold text-center text-[#2B3A8A] mb-12 font-poppins">
             Nos Partenaires Technologiques
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">

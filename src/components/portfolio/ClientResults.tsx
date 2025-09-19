@@ -131,7 +131,7 @@ const ClientResults = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-white">
+    <section ref={ref} className="py-20 bg-[#070908]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -142,16 +142,13 @@ const ClientResults = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold font-poppins text-white mb-6"
           >
-            Résultats Clients
-            <span className="block text-blue-500">
-              & Impact Mesurable
-            </span>
+            Résultats Clients & Impact Mesurable
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
+            className="text-xl text-gray-300 font-medium max-w-3xl mx-auto"
           >
             Des chiffres qui parlent : découvrez l'impact concret de nos solutions 
             sur la performance et le quotidien de nos clients.
@@ -170,14 +167,14 @@ const ClientResults = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
-              className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+              className="bg-[#070908] rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
             >
               <div className={`bg-gradient-to-r from-blue-600 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <metric.icon className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">{metric.value}</div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">{metric.title}</h4>
-              <p className="text-gray-600 text-sm">{metric.description}</p>
+              <div className="text-3xl font-bold text-white mb-2">{metric.value}</div>
+              <h4 className="text-lg font-semibold text-white mb-2">{metric.title}</h4>
+              <p className="text-gray-300 text-sm">{metric.description}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -194,14 +191,14 @@ const ClientResults = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -5 }}
-              className="bg-white border-2 border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
+              className="bg-[#070908] border-2 border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
             >
               <div className="flex items-center mb-4">
                 <span className="text-2xl mr-3"><stat.icon className="h-6 w-6 text-blue-500" /></span>
-                <h4 className="font-bold text-gray-900">{stat.client}</h4>
+                <h4 className="font-bold text-white">{stat.client}</h4>
               </div>
-              <div className="text-2xl font-bold text-gray-900 mb-2">{stat.result}</div>
-              <p className="text-gray-600">{stat.detail}</p>
+              <div className="text-2xl font-bold text-white mb-2">{stat.result}</div>
+              <p className="text-gray-300">{stat.detail}</p>
               <span className={`inline-block mt-3 px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-800`}>
                 Résultat vérifié
               </span>

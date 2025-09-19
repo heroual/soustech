@@ -39,7 +39,7 @@
   --radius-xl: 1.5rem;     /* 24px */
   
   --background: var(--color-white);
-  --foreground: var(--color-gray-900);
+  --foreground: #2B3A8A;
 }
 
 @theme inline {
@@ -602,12 +602,12 @@ textarea:focus-visible {
 
 @layer base {
   h1 {
-    @apply text-5xl font-bold font-poppins text-gray-900 md:text-7xl;
+    @apply text-5xl font-bold font-poppins text-[#2B3A8A] md:text-7xl;
   }
   h2 {
-    @apply text-4xl font-bold font-poppins text-gray-900 md:text-5xl;
+    @apply text-4xl font-bold font-poppins text-[#2B3A8A] md:text-5xl;
   }
   h3 {
-    @apply text-2xl font-bold font-poppins text-gray-900 md:text-3xl;
+    @apply text-2xl font-bold font-poppins text-[#2B3A8A] md:text-3xl;
   }
 }

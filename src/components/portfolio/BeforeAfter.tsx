@@ -126,7 +126,7 @@ const BeforeAfter = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-white">
+    <section ref={ref} className="py-20 bg-[#070908]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -137,16 +137,13 @@ const BeforeAfter = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-anthracite mb-6"
+            className="text-4xl md:text-5xl font-bold font-poppins text-white mb-6"
           >
-            Avant / Après
-            <span className="block text-blue-500">
-              Transformations
-            </span>
+            Avant / Après Transformations
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
+            className="text-xl text-gray-300 font-medium max-w-3xl mx-auto"
           >
             Découvrez les transformations spectaculaires réalisées chez nos clients. 
             Des solutions qui changent vraiment la donne.
@@ -167,7 +164,7 @@ const BeforeAfter = () => {
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${ 
                 activeComparison === index
                   ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-white text-gray-800 hover:bg-white shadow-md'
+                  : 'bg-gray-800 text-white hover:bg-gray-700 shadow-md'
               }`}
             >
               {comparison.category}
@@ -184,11 +181,11 @@ const BeforeAfter = () => {
           className="bg-white rounded-3xl shadow-xl overflow-hidden"
         >
           {/* Title */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-6 text-center">
+          <div className="bg-[#2b7efe] text-white p-6 text-center">
             <h3 className="text-2xl font-bold mb-2">
               {comparisons[activeComparison].title}
             </h3>
-            <span className="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold">
+            <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-semibold">
               {comparisons[activeComparison].category}
             </span>
           </div>
@@ -197,9 +194,9 @@ const BeforeAfter = () => {
           <div className="grid md:grid-cols-2 gap-0">
             {/* Before */}
             <div className="p-8 border-r border-gray-100">
-              <div className={`bg-white rounded-2xl p-6 text-gray-800 mb-6`}>
+              <div className={`bg-gray-100 rounded-2xl p-6 text-gray-800 mb-6`}>
                 <div className="text-4xl text-center mb-4">
-                  <X className="h-12 w-12 mx-auto text-gray-400" />
+                  <X className="h-12 w-12 mx-auto text-gray-500" />
                 </div>
                 <h4 className="text-xl font-bold text-center">
                   {comparisons[activeComparison].before.title}
@@ -245,7 +242,7 @@ const BeforeAfter = () => {
               {Object.entries(comparisons[activeComparison].results).map(([key, value], index) => (
                 <div key={index}>
                   <div className="text-2xl font-bold mb-1">{value}</div>
-                  <div className="text-blue-200 text-sm capitalize">{key.replace(/([A-Z])/g, ' $1')}</div>
+                  <div className="text-blue-600 text-sm capitalize">{key.replace(/([A-Z])/g, ' $1')}</div>
                 </div>
               ))}
             </div>
@@ -261,9 +258,9 @@ const BeforeAfter = () => {
         >
           <button
             onClick={() => setActiveComparison((prev) => (prev - 1 + comparisons.length) % comparisons.length)}
-            className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            <ArrowRight className="h-5 w-5 text-gray-700 transform rotate-180" />
+            <ArrowRight className="h-5 w-5 text-white transform rotate-180" />
           </button>
           
           <div className="flex space-x-2">
@@ -272,7 +269,7 @@ const BeforeAfter = () => {
                 key={index}
                 onClick={() => setActiveComparison(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${ 
-                  index === activeComparison ? 'bg-blue-600' : 'bg-white'
+                  index === activeComparison ? 'bg-blue-500' : 'bg-gray-700'
                 }`}
               />
             ))}
@@ -280,9 +277,9 @@ const BeforeAfter = () => {
           
           <button
             onClick={() => setActiveComparison((prev) => (prev + 1) % comparisons.length)}
-            className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            <ArrowRight className="h-5 w-5 text-gray-700" />
+            <ArrowRight className="h-5 w-5 text-white" />
           </button>
         </motion.div>
       </div>

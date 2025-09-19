@@ -120,7 +120,7 @@ const NetworkSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
             Réseaux & IT – Solutions Professionnelles
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
+          <p className="text-xl text-gray-900 max-w-4xl mx-auto leading-relaxed text-center">
             Conception, optimisation et maintenance de réseaux hautes performances pour particuliers et entreprises au Maroc.
           </p>
         </motion.div>
@@ -146,10 +146,10 @@ const NetworkSection = () => {
                 <service.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 text-center">{service.title}</h3>
-              <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base text-center">{service.description}</p>
+              <p className="text-gray-900 mb-3 sm:mb-4 text-sm sm:text-base text-center">{service.description}</p>
               <ul className="space-y-1 sm:space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start text-xs sm:text-sm text-gray-600 text-center">
+                  <li key={featureIndex} className="flex items-start text-xs sm:text-sm text-gray-900 text-center">
                     <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{feature}</span>
                   </li>
@@ -245,7 +245,7 @@ const NetworkSection = () => {
                   <solution.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
                 <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 text-center">{solution.title}</h4>
-                <p className="text-gray-600 text-xs sm:text-sm text-center">{solution.description}</p>
+                <p className="text-gray-900 text-xs sm:text-sm text-center">{solution.description}</p>
               </div>
             ))}
           </div>
@@ -265,7 +265,7 @@ const NetworkSection = () => {
               </div>
               <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{feature.stat}</div>
               <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 text-center">{feature.title}</h4>
-              <p className="text-gray-600 text-xs sm:text-sm text-center">{feature.description}</p>
+              <p className="text-gray-900 text-xs sm:text-sm text-center">{feature.description}</p>
             </div>
           ))}
         </motion.div>

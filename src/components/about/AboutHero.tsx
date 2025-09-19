@@ -33,7 +33,7 @@ const AboutHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins" style={{ color: 'white' }}>
+          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins text-white">
             Pourquoi Choisir SoussTech ?
           </h1>
         </motion.div>
@@ -42,7 +42,7 @@ const AboutHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl text-white font-medium max-w-3xl mx-auto mb-12"
+          className="text-xl text-[#2B3A8A] font-medium max-w-3xl mx-auto mb-12"
           style={{ color: 'white' }}
         >
           Découvrez pourquoi SoussTech est le partenaire idéal pour vos projets de technologies intelligentes et connectées.
@@ -54,7 +54,7 @@ const AboutHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex justify-center"
         >
-          <Link href="/about" className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}>
+          <Link href="/about" className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'white' }}>
             En Savoir Plus
           </Link>
         </motion.div>

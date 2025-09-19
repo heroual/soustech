@@ -104,7 +104,7 @@ const SecuritySection = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
             Caméras & Sécurité Intelligente
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
+          <p className="text-xl text-gray-900 max-w-4xl mx-auto leading-relaxed text-center">
             Protégez vos proches, vos biens et votre entreprise grâce à nos systèmes de vidéosurveillance avancés.
           </p>
         </motion.div>
@@ -130,10 +130,10 @@ const SecuritySection = () => {
                 <solution.icon className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">{solution.title}</h3>
-              <p className="text-gray-600 mb-4 text-sm text-center">{solution.description}</p>
+              <p className="text-gray-900 mb-4 text-sm text-center">{solution.description}</p>
               <ul className="space-y-2">
                 {solution.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-gray-600 text-center">
+                  <li key={featureIndex} className="flex items-center text-sm text-gray-900 text-center">
                     <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
                     {feature}
                   </li>
@@ -160,7 +160,7 @@ const SecuritySection = () => {
                   <app.icon className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2 text-center">{app.title}</h4>
-                <p className="text-gray-600 text-sm text-center">{app.description}</p>
+                <p className="text-gray-900 text-sm text-center">{app.description}</p>
               </div>
             ))}
           </div>
