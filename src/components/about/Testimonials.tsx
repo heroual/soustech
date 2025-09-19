@@ -97,7 +97,7 @@ const Testimonials = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6"
+            className="text-4xl md:text-5xl font-bold font-poppins text-white mb-6"
           >
             Témoignages de nos Clients
           </motion.h2>

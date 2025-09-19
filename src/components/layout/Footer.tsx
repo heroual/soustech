@@ -58,7 +58,7 @@ Nous transformons vos maisons et entreprises en espaces connectés, sécurisés 
             <ul className="space-y-4">
               <li>
                 <Link href="/services#fttr" className="text-gray-300 hover:text-primary-light transition-colors duration-300 text-lg text-left">
-                  Internet Ultra-Rapide – FTTR (Fiber to The Room)
+                  Fibre optique intégrale avec la technologie FTTR
                 </Link>
               </li>
               <li>

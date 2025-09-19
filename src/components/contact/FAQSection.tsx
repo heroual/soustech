@@ -119,7 +119,7 @@ const FAQSection = () => {
           className="grid lg:grid-cols-2 gap-8 section-spacing"
         >
           {faqCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-gray-50 rounded-3xl p-6">
+            <div key={categoryIndex} className="bg-white rounded-3xl p-6">
               {/* Category Header */}
               <div className="flex items-center mb-6">
                 <div className={`bg-gradient-to-r ${category.color} w-12 h-12 rounded-xl flex items-center justify-center mr-4`}>

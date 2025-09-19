@@ -94,7 +94,7 @@ const ContactCTASection = () => {
               href={method.action}
               variants={itemVariants}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 text-center hover:bg-gray-200 transition-all duration-300 group card-hover-effect shadow-lg relative overflow-hidden"
+              className="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:bg-white transition-all duration-300 group card-hover-effect shadow-lg relative overflow-hidden"
             >
               <div className="relative z-10">
                 <div className={`bg-gradient-to-r ${method.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 hover:lift ripple`} aria-hidden="true">
@@ -125,7 +125,7 @@ const ContactCTASection = () => {
               { text: "Support technique inclus", icon: "✓" }
             ].map((benefit, index) => (
               <div key={index} className="text-gray-800 text-center group hover:-translate-y-1 transition-transform duration-300 animate-text-pulse" style={{transitionDelay: `${index * 50}ms`}}>
-                <div className="bg-gray-100 border border-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-200 transition-all duration-300">
+                <div className="bg-white border border-gray-200 p-3 rounded-lg shadow-md hover:bg-white transition-all duration-300">
                   <span className="text-blue-600 font-bold mr-2" aria-hidden="true">{benefit.icon}</span>
                   <span className="font-semibold text-base sm:text-lg text-gray-800">{benefit.text}</span>
                 </div>

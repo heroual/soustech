@@ -10,7 +10,7 @@ const MapSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="section-padding bg-gray-50">
+    <section ref={ref} className="section-padding bg-white">
       <div className="container-padding max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

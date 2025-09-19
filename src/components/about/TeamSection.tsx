@@ -126,12 +126,9 @@ const TeamSection = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6"
           >
-            Notre Équipe
-            <span className="block text-blue-500">
-              d'Experts
-            </span>
+            Notre Équipe d'Experts
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -153,7 +150,7 @@ const TeamSection = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+              className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
             >
               <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <stat.icon className="h-8 w-8 text-white" />
@@ -204,15 +201,17 @@ const TeamSection = () => {
           ))}
         </motion.div>
 
+        </div>
+
         {/* Team Values */}
         <motion.div
           variants={itemVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-[#070908] p-8 md:p-12 text-white"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4 font-poppins">
+            <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
               Nos Valeurs d'Équipe
             </h3>
             <p className="text-gray-300 max-w-3xl mx-auto">
@@ -230,7 +229,6 @@ const TeamSection = () => {
             ))}
           </div>
         </motion.div>
-      </div>
     </section>
   );
 };

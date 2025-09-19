@@ -68,7 +68,7 @@ const ProjectCategories = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50">
+    <section ref={ref} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -77,11 +77,8 @@ const ProjectCategories = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
-            Explorez Nos
-            <span className="block text-blue-500">
-              Domaines d'Expertise
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6">
+            Explorez Nos Domaines d'Expertise
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Filtrez nos réalisations par catégorie pour découvrir 
@@ -106,7 +103,7 @@ const ProjectCategories = () => {
               className={`btn font-poppins text-base transition-all duration-300 text-center group p-4 rounded-2xl ${ 
                 activeFilter === category.id
                   ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-white text-gray-800 shadow-md hover:shadow-lg hover:bg-gray-100'
+                  : 'bg-white text-gray-800 shadow-md hover:shadow-lg hover:bg-white'
               }`}
               aria-pressed={activeFilter === category.id}
               aria-label={`Filtrer par ${category.name}`}

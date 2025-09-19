@@ -100,7 +100,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section ref={ref} className="section-padding bg-gray-50">
+    <section ref={ref} className="section-padding bg-white">
       <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -305,7 +305,7 @@ const ContactForm = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-8"
+            className="space-y-8 bg-[#010103] rounded-3xl p-8"
           >
             {/* Process */}
             <div className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-3xl p-8 text-white">
@@ -331,7 +331,7 @@ const ContactForm = () => {
             </div>
 
             {/* Guarantees */}
-            <div className="bg-white rounded-3xl shadow-lg p-8">
+            <div className="bg-[#070908] rounded-3xl shadow-lg p-8">
               <h3 className="mb-6">Nos Garanties</h3>
               <div className="space-y-4">
                 {[
@@ -344,7 +344,7 @@ const ContactForm = () => {
                 ].map((guarantee, index) => (
                   <div key={index} className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-primary mr-3" />
-                    <span className="text-gray-700">{guarantee}</span>
+                    <span className="text-white">{guarantee}</span>
                   </div>
                 ))}
               </div>

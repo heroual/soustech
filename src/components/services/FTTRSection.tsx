@@ -64,7 +64,7 @@ const FTTRSection = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
-            Internet Ultra-Rapide – FTTR (Fiber to The Room)
+            Fibre optique intégrale avec la technologie FTTR
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
             La nouvelle génération de connectivité au Maroc : la fibre optique dans chaque pièce, sans perçage et sans câbles visibles.
@@ -82,7 +82,7 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
         >
           <div className="grid md:grid-cols-2 gap-8">
             {/* Traditional vs FTTR */}
-            <div className="bg-gray-100 border-2 border-gray-200 rounded-2xl p-8">
+            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Câblage Traditionnel</h3>
               <ul className="space-y-3">
                 {

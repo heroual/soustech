@@ -122,7 +122,7 @@ const Certifications = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50">
+    <section ref={ref} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -131,11 +131,8 @@ const Certifications = () => {
           animate={isInView ? "visible" : "hidden"}
           className="text-center mb-16"
         >
-          <h2 className="mb-6">
-            Certifications
-            <span className="block text-blue-500">
-              & Partenariats
-            </span>
+          <h2 className="mb-6 text-[#2B3A8A]">
+            Certifications & Partenariats
           </h2>
           <motion.p
             variants={itemVariants}
@@ -200,15 +197,17 @@ const Certifications = () => {
           </div>
         </motion.div>
 
+        </div>
+
         {/* Quality Metrics */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-gradient-to-r from-blue-500 to-blue-500 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-[#070908] p-8 md:p-12 text-white"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4 font-poppins">
+            <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
               Garantie Qualité & Excellence
             </h3>
             <p className="text-gray-300 max-w-3xl mx-auto">
@@ -231,7 +230,6 @@ const Certifications = () => {
             ))}
           </div>
         </motion.div>
-      </div>
     </section>
   );
 };

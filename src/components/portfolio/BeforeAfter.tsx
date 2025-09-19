@@ -126,7 +126,7 @@ const BeforeAfter = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-gray-light">
+    <section ref={ref} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -167,7 +167,7 @@ const BeforeAfter = () => {
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${ 
                 activeComparison === index
                   ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-white text-gray-800 hover:bg-gray-100 shadow-md'
+                  : 'bg-white text-gray-800 hover:bg-white shadow-md'
               }`}
             >
               {comparison.category}
@@ -197,7 +197,7 @@ const BeforeAfter = () => {
           <div className="grid md:grid-cols-2 gap-0">
             {/* Before */}
             <div className="p-8 border-r border-gray-100">
-              <div className={`bg-gray-100 rounded-2xl p-6 text-gray-800 mb-6`}>
+              <div className={`bg-white rounded-2xl p-6 text-gray-800 mb-6`}>
                 <div className="text-4xl text-center mb-4">
                   <X className="h-12 w-12 mx-auto text-gray-400" />
                 </div>
@@ -272,7 +272,7 @@ const BeforeAfter = () => {
                 key={index}
                 onClick={() => setActiveComparison(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${ 
-                  index === activeComparison ? 'bg-blue-600' : 'bg-gray-300'
+                  index === activeComparison ? 'bg-blue-600' : 'bg-white'
                 }`}
               />
             ))}

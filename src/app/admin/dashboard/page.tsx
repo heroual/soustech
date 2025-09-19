@@ -70,7 +70,7 @@ const DashboardPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 font-poppins">
+    <div className="min-h-screen bg-white font-poppins">
       <main className="container mx-auto p-4 sm:p-6 lg:p-8">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
           <div>
@@ -146,13 +146,13 @@ const DashboardPage = () => {
                   </div>
 
                   {demande.message && (
-                    <div className="p-5 bg-gray-50/70 border-t border-gray-100">
+                    <div className="p-5 bg-white border-t border-gray-100">
                       <h4 className="font-semibold text-sm text-gray-600 mb-2">Message</h4>
                       <p className="text-sm text-gray-700 leading-relaxed bg-white p-3 rounded-md border border-gray-200">{demande.message}</p>
                     </div>
                   )}
 
-                  <div className="p-4 bg-gray-50 text-right border-t border-gray-100">
+                  <div className="p-4 bg-white text-right border-t border-gray-100">
                     <div className="flex items-center justify-end text-xs text-gray-500">
                       <Clock className="h-3.5 w-3.5 mr-1.5" />
                       <span>{new Date(demande.createdAt?.toDate()).toLocaleString('fr-FR', { dateStyle: 'medium', timeStyle: 'short' })}</span>

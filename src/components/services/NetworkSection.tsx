@@ -168,7 +168,7 @@ const NetworkSection = () => {
         >
           <div className="grid md:grid-cols-2 gap-8">
             {/* Card 1: Nos services Réseaux & IT */}
-            <div className="bg-gray-50 rounded-2xl p-6 shadow-md">
+            <div className="bg-white rounded-2xl p-6 shadow-md">
               <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
                 Nos services Réseaux & IT :
               </h3>
@@ -193,7 +193,7 @@ const NetworkSection = () => {
             </div>
 
             {/* Card 2: Engagement qualité */}
-            <div className="bg-gray-50 rounded-2xl p-6 shadow-md">
+            <div className="bg-white rounded-2xl p-6 shadow-md">
               <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
                 Engagement qualité :
               </h3>

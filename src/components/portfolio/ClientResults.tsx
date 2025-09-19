@@ -170,7 +170,7 @@ const ClientResults = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
-              className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+              className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
             >
               <div className={`bg-gradient-to-r from-blue-600 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <metric.icon className="h-8 w-8 text-white" />
@@ -214,13 +214,13 @@ const ClientResults = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-gradient-to-r from-gray-900 to-black rounded-3xl p-8 md:p-12 text-white"
+          className="bg-white rounded-3xl p-8 md:p-12"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4 font-poppins">
+            <h3 className="text-3xl font-bold mb-4 font-poppins text-gray-900">
               Pourquoi nos Clients Nous Choisissent
             </h3>
-            <p className="text-gray-300 max-w-3xl mx-auto">
+            <p className="text-gray-700 max-w-3xl mx-auto">
               Des résultats concrets et durables qui font la différence au quotidien.
             </p>
           </div>
@@ -230,18 +230,18 @@ const ClientResults = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="text-center"
+                className="text-center bg-gray-100 rounded-2xl p-6 shadow-md"
               >
-                <div className="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <benefit.icon className="h-8 w-8 text-blue-300" />
+                <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <benefit.icon className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-xl font-bold mb-3">{benefit.title}</h4>
-                <p className="text-gray-300 mb-4 text-sm">{benefit.description}</p>
+                <h4 className="text-xl font-bold mb-3 text-gray-900">{benefit.title}</h4>
+                <p className="text-gray-700 mb-4 text-sm">{benefit.description}</p>
                 <div className="space-y-2">
                   {benefit.examples.map((example, exIndex) => (
                     <div key={exIndex} className="flex items-center text-sm">
-                      <CheckCircle className="h-4 w-4 text-blue-300 mr-2 flex-shrink-0" />
-                      <span className="text-gray-300">{example}</span>
+                      <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
+                      <span className="text-gray-700">{example}</span>
                     </div>
                   ))}
                 </div>

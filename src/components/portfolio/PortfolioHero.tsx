@@ -40,10 +40,7 @@ const PortfolioHero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6 text-center" style={{ color: 'white' }}>
-            Nos Réalisations
-            <span className="block">
-              & Projets
-            </span>
+            Nos Réalisations & Projets
           </h1>
         </motion.div>
 

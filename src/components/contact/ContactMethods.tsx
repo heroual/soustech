@@ -98,7 +98,7 @@ const ContactMethods = () => {
               key={index}
               href={option.action}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-gray-50 rounded-3xl p-6 text-center hover:shadow-xl transition-all duration-300 group block"
+              className="bg-white rounded-3xl p-6 text-center hover:shadow-xl transition-all duration-300 group block"
             >
               <div className={`bg-gradient-to-r ${option.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <option.icon className="h-8 w-8 text-white" />
