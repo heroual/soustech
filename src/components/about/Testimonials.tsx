@@ -115,7 +115,7 @@ const Testimonials = () => {
           variants={itemVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="relative bg-gradient-to-r from-blue-500 to-blue-500 rounded-3xl p-8 md:p-12 text-white mb-12"
+          className="relative bg-white rounded-3xl p-8 md:p-12 mb-12"
         >
           {/* Background Pattern */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full transform translate-x-16 -translate-y-16"></div>
@@ -123,7 +123,7 @@ const Testimonials = () => {
           
           <div className="relative z-10">
             {/* Quote Icon */}
-            <Quote className="h-12 w-12 text-blue-200 mb-6" />
+            <Quote className="h-12 w-12 text-blue-500 mb-6" />
             
             {/* Testimonial Content */}
             <motion.div
@@ -135,7 +135,7 @@ const Testimonials = () => {
               className="grid md:grid-cols-3 gap-8 items-center"
             >
               <div className="md:col-span-2">
-                <p className="text-xl md:text-2xl leading-relaxed mb-6">
+                <p className="text-xl md:text-2xl leading-relaxed mb-6 text-gray-800">
                   "{testimonials[currentTestimonial].content}"
                 </p>
                 
@@ -147,26 +147,26 @@ const Testimonials = () => {
                 </div>
                 
                 {/* Service Tag */}
-                <div className="inline-block bg-white/20 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                <div className="inline-block bg-blue-100 px-4 py-2 rounded-full text-sm font-semibold mb-4 text-blue-800">
                   {testimonials[currentTestimonial].service}
                 </div>
               </div>
               
               <div className="text-center md:text-right">
                 {/* Avatar */}
-                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto md:ml-auto md:mr-0 mb-4">
-                  <span className="text-2xl font-bold">
+                <div className="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto md:ml-auto md:mr-0 mb-4">
+                  <span className="text-2xl font-bold text-white">
                     {testimonials[currentTestimonial].avatar}
                   </span>
                 </div>
                 
-                <h4 className="text-xl font-bold mb-1">
+                <h4 className="text-xl font-bold mb-1 text-gray-900">
                   {testimonials[currentTestimonial].name}
                 </h4>
-                <p className="text-blue-100 mb-1">
+                <p className="text-gray-700 mb-1">
                   {testimonials[currentTestimonial].role}
                 </p>
-                <p className="text-blue-200 text-sm">
+                <p className="text-gray-600 text-sm">
                   {testimonials[currentTestimonial].location}
                 </p>
               </div>
@@ -176,9 +176,9 @@ const Testimonials = () => {
             <div className="flex justify-between items-center mt-8">
               <button
                 onClick={prevTestimonial}
-                className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition-colors duration-300"
+                className="bg-blue-500 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300"
               >
-                <ChevronLeft className="h-6 w-6" />
+                <ChevronLeft className="h-6 w-6 text-white" />
               </button>
               
               {/* Dots */}
@@ -188,7 +188,7 @@ const Testimonials = () => {
                     key={index}
                     onClick={() => setCurrentTestimonial(index)}
                     className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                      index === currentTestimonial ? 'bg-white' : 'bg-white/40'
+                      index === currentTestimonial ? 'bg-blue-500' : 'bg-blue-200'
                     }`}
                   />
                 ))}
@@ -196,9 +196,9 @@ const Testimonials = () => {
               
               <button
                 onClick={nextTestimonial}
-                className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition-colors duration-300"
+                className="bg-blue-500 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300"
               >
-                <ChevronRight className="h-6 w-6" />
+                <ChevronRight className="h-6 w-6 text-white" />
               </button>
             </div>
           </div>
