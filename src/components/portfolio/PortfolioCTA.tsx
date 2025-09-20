@@ -11,7 +11,7 @@ const PortfolioCTA = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
+    <section ref={ref} className="py-20 bg-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -26,13 +26,10 @@ const PortfolioCTA = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-white mb-6">
-            Votre Projet Sera le
-            <span className="block text-blue-400">
-              Prochain Succès
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6">
+            Votre Projet Sera le Prochain Succès
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-900 max-w-3xl mx-auto mb-8">
             Rejoignez nos clients satisfaits et transformez votre espace avec nos solutions 
             technologiques innovantes. Demandez votre devis personnalisé dès maintenant.
           </p>
@@ -46,7 +43,7 @@ const PortfolioCTA = () => {
         >
           {/* Left: Call to Action */}
           <div>
-            <h3 className="text-white mb-6">
+            <h3 className="text-gray-900 mb-6">
               Étapes Simples pour Votre Projet
             </h3>
             <div className="space-y-4 mb-8">
@@ -57,10 +54,10 @@ const PortfolioCTA = () => {
                 { step: "4", text: "Formation et support inclus" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center">
-                  <div className="bg-blue-500 w-8 h-8 rounded-full flex items-center justify-center mr-4 text-gray-900 font-bold">
+                  <div className="bg-blue-500 w-8 h-8 rounded-full flex items-center justify-center mr-4 text-white font-bold">
                     {item.step}
                   </div>
-                  <span className="text-gray-300">{item.text}</span>
+                  <span className="text-gray-900">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -68,14 +65,14 @@ const PortfolioCTA = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+                className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'white' }}
               >
                 Demander un Devis
               </Link>
               
               <Link
                 href="#" // Assuming no specific link for PDF, or user can provide one
-                className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+                className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'white' }}
               >
                 Portfolio PDF
               </Link>
@@ -87,42 +84,42 @@ const PortfolioCTA = () => {
             <motion.a
               href="tel:+212808551720"
               whileHover={{ scale: 1.02 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group flex items-center"
+              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 text-center hover:bg-gray-200 transition-all duration-300 group flex items-center"
             >
               <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                 <Phone className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h4 className="text-white font-semibold">Conseil Immédiat</h4>
-                <p className="text-gray-400 text-sm">+212 808 551 720</p>
+                <h4 className="text-[#2B3A8A] font-semibold">Conseil Immédiat</h4>
+                <p className="text-gray-900 text-sm">+212 808 551 720</p>
               </div>
             </motion.a>
 
             <motion.a
               href="https://wa.me/212697342443"
               whileHover={{ scale: 1.02 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group flex items-center"
+              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 text-center hover:bg-gray-200 transition-all duration-300 group flex items-center"
             >
               <div className="bg-gradient-to-r from-blue-600 to-blue-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                 <MessageCircle className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h4 className="text-white font-semibold">WhatsApp Business</h4>
-                <p className="text-gray-400 text-sm">Réponse en 5 minutes</p>
+                <h4 className="text-[#2B3A8A] font-semibold">WhatsApp Business</h4>
+                <p className="text-gray-900 text-sm">Réponse en 5 minutes</p>
               </div>
             </motion.a>
 
             <motion.a
               href="mailto:contact@soustech.ma"
               whileHover={{ scale: 1.02 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group flex items-center"
+              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 text-center hover:bg-gray-200 transition-all duration-300 group flex items-center"
             >
               <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                 <Mail className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h4 className="text-white font-semibold">Devis Détaillé</h4>
-                <p className="text-gray-400 text-sm">contact@soustech.ma</p>
+                <h4 className="text-[#2B3A8A] font-semibold">Devis Détaillé</h4>
+                <p className="text-gray-900 text-sm">contact@soustech.ma</p>
               </div>
             </motion.a>
           </div>
@@ -142,7 +139,7 @@ const PortfolioCTA = () => {
               "✓ Support technique inclus",
               "✓ Satisfaction client 98%"
             ].map((benefit, index) => (
-              <div key={index} className="text-gray-400 text-sm font-medium">
+              <div key={index} className="text-gray-900 text-sm font-medium">
                 {benefit}
               </div>
             ))}

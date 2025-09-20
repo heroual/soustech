@@ -242,7 +242,7 @@ const BeforeAfter = () => {
               {Object.entries(comparisons[activeComparison].results).map(([key, value], index) => (
                 <div key={index}>
                   <div className="text-2xl font-bold mb-1">{value}</div>
-                  <div className="text-blue-600 text-sm capitalize">{key.replace(/([A-Z])/g, ' $1')}</div>
+                  <div className="text-white text-sm capitalize">{key.replace(/([A-Z])/g, ' $1')}</div>
                 </div>
               ))}
             </div>

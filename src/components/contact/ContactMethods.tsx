@@ -74,11 +74,8 @@ const ContactMethods = () => {
           transition={{ duration: 0.8 }}
           className="text-center section-title-spacing"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
-            Plusieurs Moyens
-            <span className="block text-blue-500">
-              de nous Contacter
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6">
+            Plusieurs Moyens de nous Contacter
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choisissez le canal de communication qui vous convient le mieux. 
@@ -126,23 +123,24 @@ const ContactMethods = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 text-white"
+          whileHover={{ scale: 1.02 }}
+          className="bg-white rounded-3xl p-8 md:p-12 shadow-lg hover:shadow-xl transition-all duration-300"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-6 font-poppins">
+              <h3 className="text-3xl font-bold mb-6 font-poppins text-gray-900">
                 Notre Bureau à Taroudant
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <MapPin className="h-5 w-5 text-blue-300 mr-3 mt-1 flex-shrink-0" />
+                  <MapPin className="h-5 w-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold">{officeInfo.address}</p>
-                    <p className="text-gray-300">{officeInfo.city}</p>
+                    <p className="font-semibold text-gray-900">{officeInfo.address}</p>
+                    <p className="text-gray-900">{officeInfo.city}</p>
                   </div>
                 </div>
                 
-                <div className="text-xl text-gray-200 font-medium">
+                <div className="text-xl text-gray-900 font-medium">
                   <p>🌍 {officeInfo.region}</p>
                   <p>🅿️ {officeInfo.parking}</p>
                 </div>
@@ -150,25 +148,25 @@ const ContactMethods = () => {
             </div>
             
             <div>
-              <h4 className="text-xl font-bold mb-4">Horaires d'Ouverture</h4>
-              <div className="space-y-2 text-gray-300">
+              <h4 className="text-xl font-bold mb-4 text-gray-900">Horaires d'Ouverture</h4>
+              <div className="space-y-2 text-gray-900">
                 <div className="flex items-center">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  <Clock className="h-4 w-4 mr-2 text-blue-500" />
                   <span className="text-sm">{officeInfo.hours.weekdays}</span>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  <Clock className="h-4 w-4 mr-2 text-blue-500" />
                   <span className="text-sm">{officeInfo.hours.saturday}</span>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  <Clock className="h-4 w-4 mr-2 text-blue-500" />
                   <span className="text-sm">{officeInfo.hours.sunday}</span>
                 </div>
               </div>
               
-              <div className="mt-6 p-4 bg-white/10 rounded-xl">
-                <h5 className="font-semibold mb-2">💡 Conseil</h5>
-                <p className="text-xl text-gray-200 font-medium">
+              <div className="mt-6 p-4 bg-gray-100 rounded-xl">
+                <h5 className="font-semibold mb-2 text-gray-900">💡 Conseil</h5>
+                <p className="text-xl text-gray-900 font-medium">
                   Pour les visites sur site, nous nous déplaçons dans toute la région Souss-Massa. 
                   Contactez-nous pour planifier un rendez-vous.
                 </p>

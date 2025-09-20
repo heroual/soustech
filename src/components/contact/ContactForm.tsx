@@ -109,11 +109,8 @@ const ContactForm = () => {
           transition={{ duration: 0.8 }}
           className="text-center section-title-spacing"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
-            Demande de
-            <span className="block gradient-text">
-              Devis Gratuit
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6">
+            Demande de Devis Gratuit
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Décrivez-nous votre projet et recevez un devis personnalisé sous 24h. 
@@ -133,7 +130,7 @@ const ContactForm = () => {
               {/* Personal Information */}
               <div className="grid md:grid-cols-2 gap-4">
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2 text-center">
+                  <label className="block text-sm font-semibold text-gray-900 mb-2 text-center">
                     <User className="inline h-4 w-4 mr-2" />
                     Nom complet *
                   </label>
@@ -149,7 +146,7 @@ const ContactForm = () => {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2 text-center">
+                  <label className="block text-sm font-semibold text-gray-900 mb-2 text-center">
                     <Mail className="inline h-4 w-4 mr-2" />
                     Email *
                   </label>
@@ -167,7 +164,7 @@ const ContactForm = () => {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2 text-center">
+                  <label className="block text-sm font-semibold text-gray-900 mb-2 text-center">
                     <Phone className="inline h-4 w-4 mr-2" />
                     Téléphone *
                   </label>
@@ -183,7 +180,7 @@ const ContactForm = () => {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2 text-center">
+                  <label className="block text-sm font-semibold text-gray-900 mb-2 text-center">
                     <MapPin className="inline h-4 w-4 mr-2" />
                     Ville/Code postal *
                   </label>
@@ -201,7 +198,7 @@ const ContactForm = () => {
 
               {/* Service Selection */}
               <motion.div variants={itemVariants}>
-                <label className="block text-sm font-semibold text-gray-700 mb-4 text-center">
+                <label className="block text-sm font-semibold text-gray-900 mb-4 text-center">
                   Service souhaité *
                 </label>
                 <div className="grid md:grid-cols-2 gap-3">
@@ -231,7 +228,7 @@ const ContactForm = () => {
 
               {/* Project Type */}
               <motion.div variants={itemVariants}>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
                   Type de projet *
                 </label>
                 <select
@@ -250,7 +247,7 @@ const ContactForm = () => {
 
               {/* Urgency */}
               <motion.div variants={itemVariants}>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
                   Urgence du projet
                 </label>
                 <select
@@ -267,7 +264,7 @@ const ContactForm = () => {
 
               {/* Message */}
               <motion.div variants={itemVariants}>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
                   <MessageSquare className="inline h-4 w-4 mr-2" />
                   Description du projet
                 </label>
@@ -305,11 +302,11 @@ const ContactForm = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-8 bg-[#010103] rounded-3xl p-8"
+            className="space-y-8 bg-white rounded-3xl p-8"
           >
             {/* Process */}
-            <div className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-3xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-6">Notre Processus</h3>
+            <div className="bg-white rounded-3xl p-8">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Notre Processus</h3>
               <div className="space-y-4">
                 {[
                   { step: "1", text: "Réception de votre demande", time: "Immédiat" },
@@ -318,12 +315,12 @@ const ContactForm = () => {
                   { step: "4", text: "Planification intervention", time: "Sur RDV" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-center">
-                    <div className="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center mr-4 text-sm font-bold">
+                    <div className="bg-gray-200 w-8 h-8 rounded-full flex items-center justify-center mr-4 text-sm font-bold text-gray-900">
                       {item.step}
                     </div>
                     <div className="flex-1">
-                      <span className="font-semibold">{item.text}</span>
-                      <div className="text-blue-200 text-sm">{item.time}</div>
+                      <span className="font-semibold text-gray-900">{item.text}</span>
+                      <div className="text-gray-900 text-sm">{item.time}</div>
                     </div>
                   </div>
                 ))}
@@ -331,8 +328,8 @@ const ContactForm = () => {
             </div>
 
             {/* Guarantees */}
-            <div className="bg-[#070908] rounded-3xl shadow-lg p-8">
-              <h3 className="mb-6">Nos Garanties</h3>
+            <div className="bg-white rounded-3xl shadow-lg p-8">
+              <h3 className="mb-6 text-gray-900">Nos Garanties</h3>
               <div className="space-y-4">
                 {[
                   "Devis gratuit et sans engagement",
@@ -344,7 +341,7 @@ const ContactForm = () => {
                 ].map((guarantee, index) => (
                   <div key={index} className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-primary mr-3" />
-                    <span className="text-white">{guarantee}</span>
+                    <span className="text-gray-900">{guarantee}</span>
                   </div>
                 ))}
               </div>

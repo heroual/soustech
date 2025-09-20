@@ -99,11 +99,8 @@ const FAQSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center section-title-spacing"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
-            Questions
-            <span className="block text-blue-500">
-              Fréquentes
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6">
+            Questions Fréquentes
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Trouvez rapidement les réponses à vos questions les plus courantes. 
@@ -182,27 +179,27 @@ const FAQSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-blue-500 to-blue-400 rounded-3xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4 text-center">Vous avez d'autres questions ?</h3>
-            <p className="text-xl text-gray-200 font-medium mb-6 text-center">
+          <div className="bg-gray-100 rounded-3xl p-8">
+            <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">Vous avez d'autres questions ?</h3>
+            <p className="text-xl text-gray-900 font-medium mb-6 text-center">
               Notre équipe d'experts est là pour répondre à toutes vos interrogations spécifiques.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+212808551720"
-                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center"
+                className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center text-white"
               >
                 📞 Appelez-nous
               </a>
               <a
                 href="https://wa.me/212697342443"
-                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center"
+                className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center text-white"
               >
                 💬 WhatsApp
               </a>
               <a
                 href="mailto:contact@soustech.ma"
-                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center"
+                className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center text-white"
               >
                 ✉️ Email
               </a>

@@ -34,11 +34,8 @@ const ContactHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold font-poppins mb-9" style={{ color: 'white' }}>
-            Contactez
-            <span className="block">
-              Nos Experts
-            </span>
+          <h1 className="text-5xl md:text-7xl font-bold font-poppins mb-9 text-white">
+            Contactez Nos Experts
           </h1>
         </motion.div>
 
