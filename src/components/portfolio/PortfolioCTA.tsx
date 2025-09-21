@@ -84,7 +84,7 @@ const PortfolioCTA = () => {
             <motion.a
               href="tel:+212808551720"
               whileHover={{ scale: 1.02 }}
-              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 text-center hover:bg-gray-200 transition-all duration-300 group flex items-center"
+              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 hover:bg-gray-200 transition-all duration-300 group flex items-center"
             >
               <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                 <Phone className="h-6 w-6 text-white" />
@@ -98,7 +98,7 @@ const PortfolioCTA = () => {
             <motion.a
               href="https://wa.me/212697342443"
               whileHover={{ scale: 1.02 }}
-              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 text-center hover:bg-gray-200 transition-all duration-300 group flex items-center"
+              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 hover:bg-gray-200 transition-all duration-300 group flex items-center"
             >
               <div className="bg-gradient-to-r from-blue-600 to-blue-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                 <MessageCircle className="h-6 w-6 text-white" />
@@ -112,7 +112,7 @@ const PortfolioCTA = () => {
             <motion.a
               href="mailto:contact@soustech.ma"
               whileHover={{ scale: 1.02 }}
-              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 text-center hover:bg-gray-200 transition-all duration-300 group flex items-center"
+              className="bg-gray-100 border border-gray-200 rounded-2xl p-6 hover:bg-gray-200 transition-all duration-300 group flex items-center"
             >
               <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                 <Mail className="h-6 w-6 text-white" />
@@ -130,7 +130,7 @@ const PortfolioCTA = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-center"
+          className=""
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {[

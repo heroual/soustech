@@ -211,33 +211,6 @@ const Testimonials = () => {
           animate={isInView ? "visible" : "hidden"}
           className="grid md:grid-cols-3 gap-6"
         >
-          {testimonials.slice(0, 3).map((testimonial, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="bg-white rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
-            >
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white font-bold">{testimonial.avatar}</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-gray-700 text-sm">{testimonial.role}</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center mb-3">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 text-blue-400 fill-current" />
-                ))}
-              </div>
-              
-              <p className="text-gray-700 text-sm leading-relaxed">
-                "{testimonial.content.substring(0, 120)}..."
-              </p>
-            </motion.div>
-          ))}
         </motion.div>
       </div>
     </section>

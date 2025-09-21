@@ -87,6 +87,7 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
               <ul className="space-y-3">
                 {
                   [
+                    "Technologie dépassée et peu évolutive",
                     "Perçage et goulotte visibles",
                     "Débit limité par le cuivre",
                     "Perte de signal sur distance",

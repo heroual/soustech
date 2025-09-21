@@ -88,31 +88,33 @@ const ContactMethods = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 section-spacing"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 section-spacing"
         >
           {contactOptions.map((option, index) => (
             <motion.a
               key={index}
               href={option.action}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-white rounded-3xl p-6 text-center hover:shadow-xl transition-all duration-300 group block"
+              className="bg-white rounded-3xl p-6 text-center hover:shadow-xl transition-all duration-300 group block flex flex-col items-center justify-between min-h-[280px]"
             >
-              <div className={`bg-gradient-to-r ${option.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <option.icon className="h-8 w-8 text-white" />
-              </div>
-              
-              <h3 className="text-xl font-bold text-gray-900 mb-1">{option.title}</h3>
-              <p className="text-sm text-gray-600 mb-3">{option.subtitle}</p>
-              
-              <div className={`bg-gradient-to-r ${option.color} text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block`}>
-                {option.contact}
-              </div>
-              
-              <p className="text-gray-600 text-sm mb-3">{option.description}</p>
-              
-              <div className="flex items-center justify-center text-xs text-gray-500">
-                <Clock className="h-3 w-3 mr-1" />
-                {option.available}
+              <div className="flex flex-col items-center flex-grow">
+                <div className={`bg-gradient-to-r ${option.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <option.icon className="h-8 w-8 text-white" />
+                </div>
+                
+                <h3 className="text-xl font-bold text-gray-900 mb-1">{option.title}</h3>
+                <p className="text-sm text-gray-600 mb-3">{option.subtitle}</p>
+                
+                <div className={`bg-gradient-to-r ${option.color} text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block`}>
+                  {option.contact}
+                </div>
+                
+                <p className="text-gray-600 text-sm mb-3 flex-grow text-center leading-relaxed">{option.description}</p>
+                
+                <div className="flex items-center justify-center text-xs text-gray-500 mt-auto">
+                  <Clock className="h-3 w-3 mr-1" />
+                  {option.available}
+                </div>
               </div>
             </motion.a>
           ))}

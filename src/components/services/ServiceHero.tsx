@@ -34,7 +34,7 @@ const ServiceHero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins text-white">
-            Nos Solutions Technologiques.
+            Nos Solutions Technologiques
           </h1>
         </motion.div>
 

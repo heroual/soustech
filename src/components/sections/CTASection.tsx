@@ -68,7 +68,68 @@ const CTASection = () => {
       </div>
 
       <div className="relative z-10 container-padding max-w-7xl mx-auto">
-        
+        {/* Header */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="text-center text-white mb-12"
+        >
+          <motion.h2
+            variants={itemVariants}
+            id="cta-heading"
+            className="text-4xl md:text-5xl font-bold font-poppins mb-6"
+          >
+            Prêt à Moderniser Votre Infrastructure ?
+          </motion.h2>
+          <motion.p
+            variants={itemVariants}
+            className="text-xl font-medium max-w-3xl mx-auto leading-relaxed"
+          >
+            Nos experts vous accompagnent dans tous vos projets technologiques. Demandez votre devis personnalisé dès aujourd'hui.
+          </motion.p>
+        </motion.div>
+
+        {/* Contact Methods Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="grid md:grid-cols-3 gap-6 mb-12"
+        >
+          {contactMethods.map((method, index) => (
+            <motion.a
+              key={index}
+              href={method.action}
+              variants={itemVariants}
+              whileHover={{ y: -5, scale: 1.02 }}
+              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300 group flex flex-col items-center justify-center min-h-[200px]"
+            >
+              <div className={`bg-gradient-to-r ${method.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <method.icon className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">{method.title}</h3>
+              <p className="text-blue-200 text-sm mb-3 font-medium">{method.description}</p>
+              <span className="text-white font-semibold text-lg block">{method.label}</span>
+            </motion.a>
+          ))}
+        </motion.div>
+
+        {/* CTA Button */}
+        <motion.div
+          variants={itemVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="text-center"
+        >
+          <Link
+            href="/contact"
+            className="btn-futuristic-primary inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
+          >
+            Demander un Devis Détaillé
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
