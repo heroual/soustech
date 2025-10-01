@@ -24,56 +24,56 @@ const WhyChooseUs = () => {
       icon: Zap,
       title: "Rapidité ⚡",
       description: "Installation ultra-rapide sans interruption",
-      details: "Nos équipes d'experts réalisent vos installations en un temps record, avec un minimum de dérangement pour votre quotidien.",
-      stats: "Installation en 24h"
+      details: "Nos experts réalisent vos installations en un temps record, avec un minimum d’impact sur votre quotidien.",
+      stats: "Installation sous 24h"
     },
     {
       icon: Shield,
       title: "Sécurité 🔒",
-      description: "Technologies de pointe et normes strictes",
-      details: "Toutes nos solutions respectent les normes de sécurité les plus strictes avec des composants certifiés et une maintenance préventive.",
-      stats: "Norme ISO 27001"
+      description: "Technologies fiables et normes strictes",
+      details: "Toutes nos solutions respectent les standards les plus élevés, avec des composants certifiés et une maintenance préventive.",
+      stats: "Conforme à la norme ISO 27001"
     },
     {
       icon: Rocket,
       title: "Innovation 🚀",
-      description: "Solutions d'avant-garde et technologies émergentes",
-      details: "Nous intégrons les dernières innovations technologiques pour vous offrir des solutions futureproof et évolutives.",
-      stats: "Technologie Wi-Fi 7"
+      description: "Technologies de pointe et solutions évolutives",
+      details: "Nous intégrons les dernières innovations pour garantir des systèmes performants, durables et prêts pour l’avenir.",
+      stats: "Technologie Wi-Fi 7 intégrée"
     },
     {
       icon: Headphones,
       title: "Support 24/7 📞",
-      description: "Assistance technique disponible en permanence",
-      details: "Notre équipe de support technique est disponible 24h/24 et 7j/7 pour résoudre vos problèmes et répondre à vos questions.",
-      stats: "Temps de réponse < 2min"
+      description: "Assistance technique continue",
+      details: "Notre équipe reste disponible 24h/24 et 7j/7 pour répondre à vos questions et résoudre tout incident rapidement.",
+      stats: "Temps de réponse < 2 min"
     }
   ];
 
   const advantages = [
     {
       icon: Star,
-      title: "Satisfaction Garantie",
-      description: "98% de nos clients recommandent nos services",
-      stat: "98%"
+      title: "Recommandée par nos clients",
+      description: "La qualité de nos services est prouvée : 98 % de nos clients nous recommandent.",
+      stat: "Satisfaction Garantie – 98%"
     },
     {
       icon: Award,
-      title: "Expertise Certifiée",
-      description: "Techniciens certifiés et formation continue",
-      stat: "5+ ans"
+      title: "Compétences reconnues",
+      description: "Des techniciens qualifiés, formés en continu pour garantir un haut niveau d’expertise.",
+      stat: "Expertise\nCertifiée – 5+ ans"
     },
     {
       icon: Clock,
-      title: "Intervention Rapide",
-      description: "Délai d'intervention garanti sous 4h",
-      stat: "< 4h"
+      title: "Assistance sur site garantie",
+      description: "Nos équipes interviennent en moins de 4 heures en cas de besoin.",
+      stat: "Intervention\nRapide – < 4h"
     },
     {
       icon: CheckCircle,
-      title: "Garantie Étendue",
-      description: "Garantie constructeur + garantie installation",
-      stat: "10 ans"
+      title: "Fiabilité sur le long terme",
+      description: "Bénéficiez d’une garantie constructeur complétée par notre garantie d’installation.",
+      stat: "Garantie\nÉtendue – 10 ans"
     }
   ];
 
@@ -113,8 +113,10 @@ const WhyChooseUs = () => {
             variants={itemVariants}
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center"
           >
-            Ce qui nous distingue : un engagement total envers l'excellence, 
-            l'innovation et la satisfaction de nos clients.
+            Nous croyons que chaque espace, qu’il soit résidentiel ou professionnel, mérite d’être connecté, sécurisé et optimisé.
+            Notre approche repose sur trois principes essentiels : excellence technique, innovation continue et satisfaction client.
+            <br /><br />
+            Avec des solutions fiables et évolutives, nous accompagnons chaque projet pour garantir performance, confort et tranquillité d’esprit.
           </motion.p>
         </motion.div>
 
@@ -160,8 +162,10 @@ const WhyChooseUs = () => {
                   {feature.details}
                 </p>
 
-                <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold text-center">
-                  {feature.stats}
+                <div className="text-center">
+                  <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                    {feature.stats}
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -184,9 +188,8 @@ const WhyChooseUs = () => {
               <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <advantage.icon className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">{advantage.stat}</div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2 text-center">{advantage.title}</h4>
-              <p className="text-gray-600 text-sm text-center">{advantage.description}</p>
+              <div className="text-2xl font-bold text-gray-900 mb-2 whitespace-pre-line">{advantage.stat}</div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2 text-center">{advantage.title}</h4>              <p className="text-gray-600 text-sm text-center">{advantage.description}</p>
             </motion.div>
           ))}
         </motion.div>

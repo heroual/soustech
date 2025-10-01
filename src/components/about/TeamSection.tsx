@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
-import { Users, Award, Zap, Settings } from 'lucide-react';
+import { Users, Award, Zap, Settings, Rocket, Headphones, Shield, MapPin } from 'lucide-react';
 
 const TeamSection = () => {
   const ref = useRef(null);
@@ -51,47 +51,42 @@ const TeamSection = () => {
 
   const teamStats = [
     {
-      icon: Users,
-      title: "Équipe d'Experts",
-      description: "Techniciens certifiés et expérimentés",
-      stat: "15+"
-    },
-    {
-      icon: Award,
-      title: "Années d'Expérience",
-      description: "Moyenne d'expérience de l'équipe",
-      stat: "8 ans"
-    },
-    {
       icon: Zap,
-      title: "Projets Réalisés",
-      description: "Installations réussies à ce jour",
-      stat: "500+"
+      title: "Projets réalisés",
+      value: "50+"
     },
     {
       icon: Settings,
-      title: "Technologies Maîtrisées",
-      description: "Différentes technologies et protocoles",
-      stat: "25+"
+      title: "Technologies maîtrisées",
+      value: "25+"
+    },
+    {
+      icon: MapPin,
+      title: "Support & suivi",
+      value: "disponible partout au Maroc"
     }
   ];
 
   const values = [
     {
+      icon: Award,
       title: "Expertise Technique",
-      description: "Formation continue sur les dernières technologies et certifications professionnelles"
+      description: "techniciens certifiés et formés en continu"
     },
     {
-      title: "Service Client",
-      description: "Accompagnement personnalisé et support technique de qualité"
-    },
-    {
+      icon: Rocket,
       title: "Innovation",
-      description: "Veille technologique constante et adoption des solutions d'avant-garde"
+      description: "technologies de pointe et solutions évolutives"
     },
     {
-      title: "Qualité",
-      description: "Standards élevés d'installation et garantie satisfaction client"
+      icon: Headphones,
+      title: "Service Client",
+      description: "accompagnement personnalisé"
+    },
+    {
+      icon: Shield,
+      title: "Qualité & Fiabilité",
+      description: "installations sécurisées et durables"
     }
   ];
 
@@ -128,14 +123,13 @@ const TeamSection = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6"
           >
-            Notre Équipe d'Experts
+            Notre Équipe & Compétences
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
           >
-            Une équipe passionnée de professionnels expérimentés, 
-            dédiée à vous offrir les meilleures solutions technologiques.
+            Une équipe passionnée et certifiée, dédiée à transformer vos espaces en environnements connectés et sécurisés. Avec une moyenne de 8 ans d’expérience et des centaines de projets réussis, nous mettons notre savoir-faire au service de vos besoins.
           </motion.p>
         </motion.div>
 
@@ -144,22 +138,26 @@ const TeamSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
         >
-          {teamStats.map((stat, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
-            >
-              <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <stat.icon className="h-8 w-8 text-white" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">{stat.stat}</div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">{stat.title}</h4>
-              <p className="text-gray-600 text-sm">{stat.description}</p>
-            </motion.div>
-          ))}
+          {teamStats.map((stat, index) => {
+            const isTextStat = stat.title === "Support & suivi";
+            return (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+              >
+                <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <stat.icon className="h-8 w-8 text-white" />
+                </div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">{stat.title}</h4>
+                <div className={isTextStat ? "text-xl font-semibold text-gray-900 mb-2" : "text-3xl font-bold text-gray-900 mb-2"}>
+                  {stat.value}
+                </div>
+              </motion.div>
+            )
+          })}
         </motion.div>
 
         {/* Team Members */}
@@ -212,17 +210,19 @@ const TeamSection = () => {
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
-              Nos Valeurs d'Équipe
+              Nos Valeurs & Engagements
             </h3>
             <p className="text-gray-300 max-w-3xl mx-auto">
-              Ce qui unit notre équipe et guide notre approche professionnelle 
-              au quotidien.
+              Nous plaçons l’excellence, l’innovation et la satisfaction client au cœur de chaque projet. Nos solutions sont conçues pour être performantes, évolutives et parfaitement adaptées à vos besoins
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
               <div key={index} className="text-center">
+                <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <value.icon className="h-6 w-6 text-white" />
+                </div>
                 <h4 className="text-xl font-semibold mb-3">{value.title}</h4>
                 <p className="text-gray-300 text-sm">{value.description}</p>
               </div>

@@ -3,7 +3,9 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Award, Shield, CheckCircle, Star } from 'lucide-react';
+
+import Image from 'next/image';
+import { Users, CheckCircle, Star, Zap } from 'lucide-react';
 
 const Certifications = () => {
   const ref = useRef(null);
@@ -13,28 +15,28 @@ const Certifications = () => {
     {
       name: "Certification ISO 27001",
       description: "Système de management de la sécurité de l'information",
-      icon: Shield,
+      icon: "/images/certif/ISO27001.jpg",
       color: "from-blue-500 to-blue-400",
       year: "2023"
     },
     {
       name: "Certification FTTR",
       description: "Spécialiste agréé Fiber to The Room",
-      icon: Award,
+      icon: "/images/certif/FTTR-CERTIF.jpg",
       color: "from-blue-500 to-blue-400",
       year: "2022"
     },
     {
       name: "Installateur Agréé",
       description: "Certification professionnelle domotique",
-      icon: CheckCircle,
+      icon: "/images/certif/INSTALLATEUR-DOMOTIQUE-AGREER.jpg",
       color: "from-blue-600 to-blue-500",
       year: "2021"
     },
     {
       name: "Label Qualité",
       description: "Service après-vente de qualité certifié",
-      icon: Star,
+      icon: "/images/certif/label-qualite.jpg",
       color: "from-blue-700 to-blue-600",
       year: "2023"
     }
@@ -44,61 +46,61 @@ const Certifications = () => {
     {
       name: "Cisco",
       description: "Partenaire réseau premium",
-      logo: "🌐",
+      logo: "/images/partenariats/cisco.jpg",
       category: "Réseaux"
     },
     {
       name: "Hikvision",
       description: "Solutions de surveillance",
-      logo: "📹",
+      logo: "/images/partenariats/HIKVISION.jpg",
       category: "Sécurité"
     },
     {
       name: "Schneider Electric",
       description: "Automatisation et énergie",
-      logo: "⚡",
+      logo: "/images/partenariats/SCHNEIDER.jpg",
       category: "Domotique"
     },
     {
       name: "Ubiquiti",
       description: "Solutions Wi-Fi professionnelles",
-      logo: "📡",
+      logo: "/images/partenariats/Ubiquiti_Logo.png",
       category: "Connectivité"
     },
     {
       name: "Legrand",
       description: "Installations électriques",
-      logo: "🔌",
+      logo: "/images/partenariats/LEGRAND.jpg",
       category: "Infrastructure"
     },
     {
       name: "Axis",
       description: "Caméras IP intelligentes",
-      logo: "👁️",
+      logo: "/images/partenariats/AXIS.jpg",
       category: "Surveillance"
     }
   ];
 
   const quality = [
     {
-      title: "Formation Continue",
-      description: "Nos techniciens suivent des formations régulières sur les dernières technologies",
-      stat: "40h/an"
+      icon: Users,
+      title: "Formation continue",
+      description: "nos techniciens maîtrisent les dernières technologies."
     },
     {
-      title: "Contrôle Qualité",
-      description: "Chaque installation fait l'objet d'un contrôle qualité approfondi",
-      stat: "100%"
+      icon: CheckCircle,
+      title: "Contrôle qualité rigoureux",
+      description: "chaque installation est vérifiée pour assurer performance et sécurité."
     },
     {
-      title: "Satisfaction Client",
-      description: "Taux de satisfaction client basé sur les enquêtes post-installation",
-      stat: "98%"
+      icon: Star,
+      title: "Satisfaction client",
+      description: "un suivi personnalisé pour garantir votre entière satisfaction."
     },
     {
-      title: "Résolution Incidents",
-      description: "Temps moyen de résolution des incidents techniques",
-      stat: "< 4h"
+      icon: Zap,
+      title: "Intervention rapide",
+      description: "support technique disponible pour toute assistance."
     }
   ];
 
@@ -138,8 +140,7 @@ const Certifications = () => {
             variants={itemVariants}
             className="text-xl text-gray-900 max-w-3xl mx-auto leading-relaxed"
           >
-            Notre expertise reconnue par les plus grandes marques et organismes 
-            de certification du secteur technologique.
+            Nos solutions s’appuient sur des technologies certifiées et reconnues par les plus grandes marques du secteur, garantissant fiabilité et performance.
           </motion.p>
         </motion.div>
 
@@ -157,9 +158,7 @@ const Certifications = () => {
               whileHover={{ y: -5 }}
               className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group"
             >
-              <div className={`bg-gradient-to-r ${cert.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <cert.icon className="h-8 w-8 text-white" />
-              </div>
+              <div className="relative w-16 h-16 mx-auto mb-4"><Image src={cert.icon} alt={`${cert.name} logo`} layout="fill" objectFit="cover" className="rounded-full" /></div>
               <h3 className="text-lg font-bold text-[#2B3A8A] mb-2">{cert.name}</h3>
               <p className="text-gray-900 text-sm mb-3">{cert.description}</p>
               <div className={`inline-block bg-gradient-to-r ${cert.color} text-white px-3 py-1 rounded-full text-xs font-semibold`}>
@@ -186,7 +185,7 @@ const Certifications = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 text-center group"
               >
-                <div className="text-3xl mb-2">{partner.logo}</div>
+                <div className="relative h-16 mb-4"><Image src={partner.logo} alt={`${partner.name} logo`} layout="fill" objectFit="contain" /></div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">{partner.name}</h4>
                 <p className="text-gray-500 text-xs mb-2">{partner.description}</p>
                 <span className="inline-block bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs font-medium">
@@ -211,8 +210,7 @@ const Certifications = () => {
               Garantie Qualité & Excellence
             </h3>
             <p className="text-gray-300 max-w-3xl mx-auto">
-              Des standards de qualité élevés et un engagement constant 
-              vers l'amélioration de nos services.
+              Nous appliquons des standards élevés sur chaque projet et nous engageons à améliorer continuellement nos services pour garantir des installations fiables et durables.
             </p>
           </div>
           
@@ -223,7 +221,9 @@ const Certifications = () => {
                 variants={itemVariants}
                 className="text-center"
               >
-                <div className="text-4xl font-bold mb-2">{item.stat}</div>
+                <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="h-6 w-6 text-white" />
+                </div>
                 <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
                 <p className="text-gray-300 text-sm">{item.description}</p>
               </motion.div>

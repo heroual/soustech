@@ -30,8 +30,7 @@ const AboutCTA = () => {
             Rejoignez nos Clients Satisfaits
           </h2>
           <p className="text-xl text-gray-900 max-w-3xl mx-auto mb-8">
-            Faites confiance à notre expertise pour transformer votre espace 
-            en environnement intelligent et connecté. Votre satisfaction est notre priorité.
+            Faites confiance à notre expertise pour transformer votre espace en environnement intelligent et connecté. Votre satisfaction est notre priorité.
           </p>
         </motion.div>
 
