@@ -7,11 +7,7 @@ import {
   Zap, 
   Shield, 
   Rocket, 
-  Headphones, 
-  CheckCircle,
-  Clock,
-  Star,
-  Award
+  Headphones
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -50,32 +46,7 @@ const WhyChooseUs = () => {
     }
   ];
 
-  const advantages = [
-    {
-      icon: Star,
-      title: "Recommandée par nos clients",
-      description: "La qualité de nos services est prouvée : 98 % de nos clients nous recommandent.",
-      stat: "Satisfaction Garantie – 98%"
-    },
-    {
-      icon: Award,
-      title: "Compétences reconnues",
-      description: "Des techniciens qualifiés, formés en continu pour garantir un haut niveau d’expertise.",
-      stat: "Expertise\nCertifiée – 5+ ans"
-    },
-    {
-      icon: Clock,
-      title: "Assistance sur site garantie",
-      description: "Nos équipes interviennent en moins de 4 heures en cas de besoin.",
-      stat: "Intervention\nRapide – < 4h"
-    },
-    {
-      icon: CheckCircle,
-      title: "Fiabilité sur le long terme",
-      description: "Bénéficiez d’une garantie constructeur complétée par notre garantie d’installation.",
-      stat: "Garantie\nÉtendue – 10 ans"
-    }
-  ];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -113,10 +84,7 @@ const WhyChooseUs = () => {
             variants={itemVariants}
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center"
           >
-            Nous croyons que chaque espace, qu’il soit résidentiel ou professionnel, mérite d’être connecté, sécurisé et optimisé.
-            Notre approche repose sur trois principes essentiels : excellence technique, innovation continue et satisfaction client.
-            <br /><br />
-            Avec des solutions fiables et évolutives, nous accompagnons chaque projet pour garantir performance, confort et tranquillité d’esprit.
+            Chaque espace, résidentiel ou professionnel, mérite d’être connecté, sécurisé et optimisé. Nous apportons des solutions fiables et évolutives, guidées par l’excellence, l’innovation et la satisfaction client.
           </motion.p>
         </motion.div>
 
@@ -172,27 +140,7 @@ const WhyChooseUs = () => {
           ))}
         </motion.div>
 
-        {/* Stats Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6"
-        >
-          {advantages.map((advantage, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="bg-white rounded-2xl p-6 shadow-medium hover:shadow-large transition-all duration-300 text-center group"
-            >
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <advantage.icon className="h-8 w-8 text-white" />
-              </div>
-              <div className="text-2xl font-bold text-gray-900 mb-2 whitespace-pre-line">{advantage.stat}</div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2 text-center">{advantage.title}</h4>              <p className="text-gray-600 text-sm text-center">{advantage.description}</p>
-            </motion.div>
-          ))}
-        </motion.div>
+
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
-import { Users, Award, Zap, Settings, Rocket, Headphones, Shield, MapPin } from 'lucide-react';
+import { Users, Award, Zap, Settings, Rocket, Headphones, Shield, MapPin, Star } from 'lucide-react';
 
 const TeamSection = () => {
   const ref = useRef(null);
@@ -71,22 +71,32 @@ const TeamSection = () => {
     {
       icon: Award,
       title: "Expertise Technique",
-      description: "techniciens certifiés et formés en continu"
+      description: "Techniciens certifiés pour des projets fiables."
     },
     {
       icon: Rocket,
       title: "Innovation",
-      description: "technologies de pointe et solutions évolutives"
+      description: "Solutions évolutives et technologies de pointe."
     },
     {
       icon: Headphones,
       title: "Service Client",
-      description: "accompagnement personnalisé"
+      description: "Accompagnement personnalisé pour chaque projet."
     },
     {
       icon: Shield,
       title: "Qualité & Fiabilité",
-      description: "installations sécurisées et durables"
+      description: "Installations sécurisées avec garantie incluse."
+    },
+    {
+      icon: Star,
+      title: "Satisfaction Garantie",
+      description: "Nos clients partout au Maroc nous recommandent."
+    },
+    {
+      icon: Zap,
+      title: "Intervention Rapide",
+      description: "Assistance sur site en moins de 4 heures."
     }
   ];
 
@@ -206,18 +216,18 @@ const TeamSection = () => {
           variants={itemVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-[#070908] p-8 md:p-12 text-white"
+          className="bg-[#070908] py-20 md:py-32 px-8 md:px-12 text-white"
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
               Nos Valeurs & Engagements
             </h3>
             <p className="text-gray-300 max-w-3xl mx-auto">
-              Nous plaçons l’excellence, l’innovation et la satisfaction client au cœur de chaque projet. Nos solutions sont conçues pour être performantes, évolutives et parfaitement adaptées à vos besoins
+              Nous plaçons l’excellence, l’innovation et la satisfaction client au cœur de chaque projet. Nos solutions sont performantes, évolutives et parfaitement adaptées à vos besoins, pour garantir confort, sécurité et tranquillité d’esprit.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center">
                 <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">

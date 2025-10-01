@@ -203,7 +203,7 @@ const Certifications = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-[#070908] p-8 md:p-12 text-white"
+          className="bg-[#070908] py-20 md:py-32 px-8 md:px-12 text-white"
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
