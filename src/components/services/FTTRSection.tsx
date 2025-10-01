@@ -68,8 +68,9 @@ const FTTRSection = () => {
           </h2>
           <p className="text-xl text-gray-900 max-w-4xl mx-auto leading-relaxed text-center">
             La nouvelle génération de connectivité au Maroc : la fibre optique dans chaque pièce, sans perçage et sans câbles visibles.
-
-Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR plutôt qu’un câblage classique ?
+          </p>
+          <p className="text-xl text-gray-900 max-w-4xl mx-auto leading-relaxed text-center">
+            Pourquoi Choisir FTTR plutôt qu’un câblage classique ?
           </p>
         </motion.div>
 
