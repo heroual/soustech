@@ -209,7 +209,7 @@ const Certifications = () => {
             <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
               Garantie Qualité & Excellence
             </h3>
-            <p className="text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 font-medium max-w-3xl mx-auto">
               Nous appliquons des standards élevés sur chaque projet et nous engageons à améliorer continuellement nos services pour garantir des installations fiables et durables.
             </p>
           </div>
@@ -224,8 +224,8 @@ const Certifications = () => {
                 <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                   <item.icon className="h-6 w-6 text-white" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                <p className="text-gray-300 text-sm">{item.description}</p>
+                <h4 className="text-lg font-bold mb-2">{item.title}</h4>
+                <p className="text-gray-300 text-base">{item.description}</p>
               </motion.div>
             ))}
           </div>

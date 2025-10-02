@@ -82,7 +82,7 @@ const WhyChooseUs = () => {
           </h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center"
+            className="text-xl text-black max-w-3xl mx-auto leading-relaxed text-center"
           >
             Chaque espace, résidentiel ou professionnel, mérite d’être connecté, sécurisé et optimisé. Nous apportons des solutions fiables et évolutives, guidées par l’excellence, l’innovation et la satisfaction client.
           </motion.p>

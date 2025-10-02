@@ -63,7 +63,7 @@ const TeamSection = () => {
     {
       icon: MapPin,
       title: "Support & suivi",
-      value: "disponible partout au Maroc"
+      value: "partout au Maroc"
     }
   ];
 
@@ -161,10 +161,10 @@ const TeamSection = () => {
                 <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <stat.icon className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">{stat.title}</h4>
                 <div className={isTextStat ? "text-xl font-semibold text-gray-900 mb-2" : "text-3xl font-bold text-gray-900 mb-2"}>
                   {stat.value}
                 </div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">{stat.title}</h4>
               </motion.div>
             )
           })}
@@ -222,7 +222,7 @@ const TeamSection = () => {
             <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
               Nos Valeurs & Engagements
             </h3>
-            <p className="text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 font-medium max-w-3xl mx-auto">
               Nous plaçons l’excellence, l’innovation et la satisfaction client au cœur de chaque projet. Nos solutions sont performantes, évolutives et parfaitement adaptées à vos besoins, pour garantir confort, sécurité et tranquillité d’esprit.
             </p>
           </div>
@@ -233,8 +233,8 @@ const TeamSection = () => {
                 <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <value.icon className="h-6 w-6 text-white" />
                 </div>
-                <h4 className="text-xl font-semibold mb-3">{value.title}</h4>
-                <p className="text-gray-300 text-sm">{value.description}</p>
+                <h4 className="text-lg font-bold mb-3">{value.title}</h4>
+                <p className="text-gray-300 text-base">{value.description}</p>
               </div>
             ))}
           </div>

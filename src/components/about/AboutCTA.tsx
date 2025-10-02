@@ -88,7 +88,7 @@ const AboutCTA = () => {
         >
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 rounded-lg font-bold uppercase tracking-wider transition-all duration-300 bg-[#544fe9] text-white shadow-lg hover:shadow-xl"
+            className="inline-block px-8 py-4 rounded-lg font-bold uppercase tracking-wider transition-all duration-300 bg-[#514ae6] text-white shadow-lg hover:shadow-xl"
           >
             Demander un Devis Gratuit
           </Link>
