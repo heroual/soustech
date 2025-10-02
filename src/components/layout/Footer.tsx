@@ -18,7 +18,7 @@ const Footer = () => {
                   alt="SajiTech Logo"
                   width={48}
                   height={48}
-                  className="w-full h-full object-contain bg-white p-1 rounded-xl"
+                  className="w-full h-full object-contain rounded-xl"
                 />
               </div>
               <span className="text-2xl font-bold font-poppins text-left">SajiTech</span>
