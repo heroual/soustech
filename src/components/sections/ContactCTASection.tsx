@@ -77,7 +77,7 @@ const ContactCTASection = () => {
             className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
           >
             Vous avez un projet de maison connectée, domotique ou sécurité intelligente ?
-            Notre équipe vous accompagne partout au Maroc, de la conception à l’installation.
+            Notre équipe vous accompagne Partout au Maroc, de la conception à l’installation.
           </motion.p>
         </motion.div>
 

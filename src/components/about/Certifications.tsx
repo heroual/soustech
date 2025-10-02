@@ -206,9 +206,9 @@ const Certifications = () => {
           className="bg-[#070908] py-20 md:py-32 px-8 md:px-12 text-white"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-poppins text-white text-center">
               Garantie Qualité & Excellence
-            </h3>
+            </h2>
             <p className="text-xl text-gray-200 font-medium max-w-3xl mx-auto">
               Nous appliquons des standards élevés sur chaque projet et nous engageons à améliorer continuellement nos services pour garantir des installations fiables et durables.
             </p>

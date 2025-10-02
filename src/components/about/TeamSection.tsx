@@ -63,7 +63,7 @@ const TeamSection = () => {
     {
       icon: MapPin,
       title: "Support & suivi",
-      value: "partout au Maroc"
+      value: "Partout au Maroc"
     }
   ];
 
@@ -91,7 +91,7 @@ const TeamSection = () => {
     {
       icon: Star,
       title: "Satisfaction Garantie",
-      description: "Nos clients partout au Maroc nous recommandent."
+      description: "Nos clients Partout au Maroc nous recommandent."
     },
     {
       icon: Zap,
@@ -219,9 +219,9 @@ const TeamSection = () => {
           className="bg-[#070908] py-20 md:py-32 px-8 md:px-12 text-white"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4 font-poppins text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-poppins text-white text-center">
               Nos Valeurs & Engagements
-            </h3>
+            </h2>
             <p className="text-xl text-gray-200 font-medium max-w-3xl mx-auto">
               Nous plaçons l’excellence, l’innovation et la satisfaction client au cœur de chaque projet. Nos solutions sont performantes, évolutives et parfaitement adaptées à vos besoins, pour garantir confort, sécurité et tranquillité d’esprit.
             </p>
