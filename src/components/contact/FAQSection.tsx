@@ -118,11 +118,11 @@ const FAQSection = () => {
           {faqCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="bg-white rounded-3xl p-6">
               {/* Category Header */}
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-6 justify-center">
                 <div className={`bg-gradient-to-r ${category.color} w-12 h-12 rounded-xl flex items-center justify-center mr-4`}>
                   <category.icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">{category.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900 text-center">{category.title}</h3>
               </div>
 
               {/* FAQs */}
@@ -141,7 +141,7 @@ const FAQSection = () => {
                     >
                       <button
                         onClick={() => setOpenFAQ(isOpen ? null : globalIndex)}
-                        className="btn w-full text-left flex items-center justify-between font-poppins text-base bg-white text-primary hover:bg-primary/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                        className="btn w-full text-center flex items-center justify-center font-poppins text-base bg-white text-primary hover:bg-primary/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                         aria-expanded={isOpen}
                         aria-controls={`faq-panel-${globalIndex}`}
                       >

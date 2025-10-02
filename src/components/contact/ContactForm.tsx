@@ -110,15 +110,14 @@ const ContactForm = () => {
           className="text-center section-title-spacing"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6">
-            Demande de Devis Gratuit
+            Demandez votre devis gratuit
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Décrivez-nous votre projet et recevez un devis personnalisé sous 24h. 
-            Consultation et étude de faisabilité gratuites.
+            Remplissez ce formulaire et recevez un devis personnalisé sous 24h.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-1 gap-12">
           {/* Form */}
           <motion.div
             variants={containerVariants}
@@ -175,7 +174,7 @@ const ContactForm = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
-                    placeholder="+33 1 23 45 67 89"
+                    placeholder="+212 6 XX XX XX XX"
                   />
                 </motion.div>
 
@@ -191,39 +190,28 @@ const ContactForm = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
-                    placeholder="Paris, 75001"
+                    placeholder="Agadir, 80000"
                   />
                 </motion.div>
               </div>
 
               {/* Service Selection */}
               <motion.div variants={itemVariants}>
-                <label className="block text-sm font-semibold text-gray-900 mb-4 text-center">
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
                   Service souhaité *
                 </label>
-                <div className="grid md:grid-cols-2 gap-3">
+                <select
+                  name="service"
+                  value={formData.service}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                >
+                  <option value="">Sélectionnez le service souhaité</option>
                   {services.map((service) => (
-                    <label
-                      key={service.id}
-                      className={`flex items-center p-4 border-2 rounded-xl cursor-pointer transition-all duration-200 ${
-                        formData.service === service.id
-                          ? 'border-primary bg-primary/5'
-                          : 'border-gray-200 hover:border-gray-300'
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="service"
-                        value={service.id}
-                        checked={formData.service === service.id}
-                        onChange={handleInputChange}
-                        className="sr-only"
-                      />
-                      <service.icon className={`h-5 w-5 mr-3 ${service.color}`} />
-                      <span className="text-sm font-medium text-gray-700">{service.name}</span>
-                    </label>
+                    <option key={service.id} value={service.id}>{service.name}</option>
                   ))}
-                </div>
+                </select>
               </motion.div>
 
               {/* Project Type */}
@@ -302,48 +290,47 @@ const ContactForm = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-8 bg-white rounded-3xl p-8"
+            className="bg-white rounded-3xl p-8"
           >
-            {/* Process */}
-            <div className="bg-white rounded-3xl p-8">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Notre Processus</h3>
-              <div className="space-y-4">
-                {[
-                  { step: "1", text: "Réception de votre demande", time: "Immédiat" },
-                  { step: "2", text: "Analyse et étude gratuite", time: "24h" },
-                  { step: "3", text: "Devis personnalisé détaillé", time: "48h" },
-                  { step: "4", text: "Planification intervention", time: "Sur RDV" }
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="bg-gray-200 w-8 h-8 rounded-full flex items-center justify-center mr-4 text-sm font-bold text-gray-900">
-                      {item.step}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Process */}
+              <div className="bg-white rounded-3xl p-8">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900">Notre Processus</h3>
+                <div className="space-y-4">
+                  {[
+                    { step: "1", text: "Réception de votre demande", time: "Immédiat" },
+                    { step: "2", text: "Analyse et étude gratuite", time: "24h" },
+                    { step: "3", text: "Devis personnalisé détaillé", time: "48h" },
+                    { step: "4", text: "Planification intervention", time: "Sur RDV" }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center">
+                      <div className="bg-gray-200 w-8 h-8 rounded-full flex items-center justify-center mr-4 text-sm font-bold text-gray-900">
+                        {item.step}
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900">{item.text}</span>
+                        <div className="text-gray-900 text-sm">{item.time}</div>
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      <span className="font-semibold text-gray-900">{item.text}</span>
-                      <div className="text-gray-900 text-sm">{item.time}</div>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
 
-            {/* Guarantees */}
-            <div className="bg-white rounded-3xl shadow-lg p-8">
-              <h3 className="mb-6 text-gray-900">Nos Garanties</h3>
-              <div className="space-y-4">
-                {[
-                  "Devis gratuit et sans engagement",
-                  "Réponse garantie sous 24h",
-                  "Consultation technique incluse",
-                  "Prix transparents et compétitifs",
-                  "Installation par experts certifiés",
-                  "Garantie satisfaction client"
-                ].map((guarantee, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-primary mr-3" />
-                    <span className="text-gray-900">{guarantee}</span>
-                  </div>
-                ))}
+              {/* Guarantees */}
+              <div className="bg-white rounded-3xl shadow-lg p-8">
+                <h3 className="mb-6 text-gray-900">Nos Garanties</h3>
+                <div className="space-y-4">
+                  {[
+                                      "Devis gratuit et sans engagement",
+                                      "Prix transparents et compétitifs",
+                                      "Installation par experts certifiés",
+                                      "Support technique inclus"                  ].map((guarantee, index) => (
+                    <div key={index} className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-primary mr-3" />
+                      <span className="text-gray-900">{guarantee}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>

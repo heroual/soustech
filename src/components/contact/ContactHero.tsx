@@ -35,7 +35,7 @@ const ContactHero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold font-poppins mb-9 text-white">
-            Contactez Nos Experts
+            Contactez SajiTech
           </h1>
         </motion.div>
 
@@ -46,7 +46,7 @@ const ContactHero = () => {
           className="text-xl font-medium max-w-3xl mx-auto mb-12"
           style={{ color: 'white' }}
         >
-          Contactez nos experts pour des conseils personnalisés et un devis gratuit pour votre projet.
+          Un devis gratuit ou une intervention rapide ? Nos experts sont à votre service pour vos projets domotique, sécurité et réseaux.
         </motion.p>
 
         <motion.div
