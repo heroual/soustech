@@ -56,7 +56,7 @@ const ContactHero = () => {
           className="flex justify-center"
         >
           <Link href="/contact" className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}>
-            Nous Contacter
+            Contactez-nous
           </Link>
         </motion.div>
       </div>

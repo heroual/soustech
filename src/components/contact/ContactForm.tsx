@@ -123,7 +123,7 @@ const ContactForm = () => {
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="bg-white rounded-3xl shadow-xl p-8"
+            className="bg-white rounded-3xl shadow-xl p-8 border border-gray-200"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Personal Information */}
@@ -135,11 +135,7 @@ const ContactForm = () => {
                   </label>
                   <input
                     type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
                     placeholder="Votre nom"
                   />
                 </motion.div>
@@ -155,7 +151,7 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
                     placeholder="votre@email.com"
                   />
                 </motion.div>
@@ -169,11 +165,7 @@ const ContactForm = () => {
                   </label>
                   <input
                     type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
                     placeholder="+212 6 XX XX XX XX"
                   />
                 </motion.div>
@@ -189,7 +181,7 @@ const ContactForm = () => {
                     value={formData.address}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
                     placeholder="Agadir, 80000"
                   />
                 </motion.div>
@@ -205,7 +197,7 @@ const ContactForm = () => {
                   value={formData.service}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
                 >
                   <option value="">Sélectionnez le service souhaité</option>
                   {services.map((service) => (
@@ -220,11 +212,7 @@ const ContactForm = () => {
                   Type de projet *
                 </label>
                 <select
-                  name="projectType"
-                  value={formData.projectType}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
                 >
                   <option value="">Sélectionnez le type de projet</option>
                   {projectTypes.map((type) => (
@@ -242,7 +230,7 @@ const ContactForm = () => {
                   name="urgency"
                   value={formData.urgency}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
                 >
                   <option value="normal">Normal (sous 1 semaine)</option>
                   <option value="urgent">Urgent (sous 48h)</option>
@@ -253,7 +241,6 @@ const ContactForm = () => {
               {/* Message */}
               <motion.div variants={itemVariants}>
                 <label className="block text-sm font-semibold text-gray-900 mb-2">
-                  <MessageSquare className="inline h-4 w-4 mr-2" />
                   Description du projet
                 </label>
                 <textarea
@@ -261,7 +248,7 @@ const ContactForm = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
                   placeholder="Décrivez-nous votre projet, vos besoins spécifiques, la surface concernée, le nombre de pièces, etc."
                 />
               </motion.div>
