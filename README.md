@@ -1,4 +1,4 @@
-# 🚀 SoussTech - Site Web Professionnel
+# 🚀 SajiTech - Site Web Professionnel
 
 Un site web moderne et professionnel pour une société spécialisée dans les technologies intelligentes (FTTR, Smart Home, Sécurité, Réseaux IT).
 
@@ -33,7 +33,7 @@ Un site web moderne et professionnel pour une société spécialisée dans les t
 ### Installation
 ```bash
 # Cloner le projet
-cd sousstec-website
+cd sajitech-website
 
 # Installer les dépendances
 npm install
@@ -56,7 +56,7 @@ npm start
 ## 📁 Structure du Projet
 
 ```
-sousstec-website/
+sajitech-website/
 ├── src/
 │   ├── app/                 # Pages Next.js App Router
 │   │   ├── page.tsx         # Page d'accueil
@@ -201,15 +201,15 @@ vercel --prod
 ## 📧 Support
 
 Pour toute question ou support :
-- **Email** : contact@soustech.ma
+- **Email** : contact@sajitech.ma
 - **Téléphone** : +212 808 551 720
 - **WhatsApp** : [Démarrer le chat](https://wa.me/212697342443)
 
 ## 📄 License
 
-Projet propriétaire - SoussTech © 2024
+Projet propriétaire - SajiTech © 2024
 
 ---
 
-**Développé avec ❤️ pour SoussTech**  
+**Développé avec ❤️ pour SajiTech**  
 *Technologies intelligentes pour un avenir connecté*

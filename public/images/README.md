@@ -1,6 +1,6 @@
-# Images Directory for SoussTech Website
+# Images Directory for SajiTech Website
 
-This directory is designed to contain high-quality images that will enhance the visual appeal and professional look of the SoussTech website.
+This directory is designed to contain high-quality images that will enhance the visual appeal and professional look of the SajiTech website.
 
 ## Recommended Images to Add
 
@@ -74,10 +74,10 @@ Once images are added, update the following components:
 
 ## Notes for Designer
 
-- Ensure all images align with SoussTech's professional, modern brand
+- Ensure all images align with SajiTech's professional, modern brand
 - Focus on showcasing technology integration in residential/commercial spaces
 - Highlight the "invisible" and "aesthetic" aspects of installations
 - Show diversity in client types (residential and commercial)
 - Emphasize security, speed, and smart automation benefits
 
-To add images from your local folder D:\SoussTech\web site\images, simply copy them to this directory and update the component code accordingly.
+To add images from your local folder D:\SajiTech\web site\images, simply copy them to this directory and update the component code accordingly.

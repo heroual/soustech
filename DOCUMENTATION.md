@@ -1,4 +1,4 @@
-# SoussTech Website - Documentation Complète
+# SajiTech Website - Documentation Complète
 
 ## 📋 Table des Matières
 1. [Présentation du Projet](#présentation-du-projet)
@@ -61,7 +61,7 @@ src/
 const phoneNumber = "+33 1 23 45 67 89";
 
 // Email
-const email = "contact@sousstec.fr";
+const email = "contact@sajitech.fr";
 
 // Adresse
 const address = "123 Avenue de la Technologie, 75001 Paris";
@@ -136,7 +136,7 @@ const nouveauProjet = {
 ### Métadonnées SEO (à modifier dans chaque page)
 ```typescript
 export const metadata: Metadata = {
-  title: "Titre de la Page - SoussTech",
+  title: "Titre de la Page - SajiTech",
   description: "Description optimisée 150-160 caractères",
   keywords: "mots-clés, séparés, par, virgules",
   openGraph: {

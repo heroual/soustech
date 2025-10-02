@@ -45,7 +45,7 @@ const Certifications = () => {
   const partners = [
     {
       name: "Cisco",
-      description: "Partenaire réseau premium",
+      description: "Partenaire reseau",
       logo: "/images/partenariats/cisco.jpg",
       category: "Réseaux"
     },
@@ -63,7 +63,7 @@ const Certifications = () => {
     },
     {
       name: "Ubiquiti",
-      description: "Solutions Wi-Fi professionnelles",
+      description: "Solutions Wi-Fi",
       logo: "/images/partenariats/Ubiquiti_Logo.png",
       category: "Connectivité"
     },

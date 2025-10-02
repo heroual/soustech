@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Background Image */}
       <Image
-        src="/images/sousstech.png"
+        src="/images/sajitech.png"
         alt="Smart Home Technology"
         layout="fill"
         objectFit="cover"

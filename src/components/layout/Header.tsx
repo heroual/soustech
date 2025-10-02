@@ -26,13 +26,13 @@ const Header = () => {
             <div className="relative w-12 h-12 rounded-xl overflow-hidden">
               <Image
                 src="/images/logo.png"
-                alt="SoussTech Logo"
+                alt="SajiTech Logo"
                 width={48}
                 height={48}
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-2xl font-bold text-white font-poppins">SoussTech</span>
+            <span className="text-2xl font-bold text-white font-poppins">SajiTech</span>
           </Link>
 
           {/* Desktop Navigation */}

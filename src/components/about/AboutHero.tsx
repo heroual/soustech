@@ -34,7 +34,7 @@ const AboutHero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins text-white">
-            Pourquoi Choisir SoussTech ?
+            Pourquoi Choisir SajiTech ?
           </h1>
         </motion.div>
 
@@ -45,7 +45,7 @@ const AboutHero = () => {
           className="text-xl text-[#2B3A8A] font-medium max-w-3xl mx-auto mb-12"
           style={{ color: 'white' }}
         >
-          Découvrez pourquoi SoussTech est le partenaire idéal pour vos projets de technologies intelligentes et connectées.
+          Découvrez pourquoi SajiTech est le partenaire idéal pour vos projets de technologies intelligentes et connectées.
         </motion.p>
 
         <motion.div

@@ -50,7 +50,7 @@ const ServicesCTA = () => {
         >
           {/* Benefits */}
           <div className="bg-[#f3f4f6] rounded-2xl p-6 shadow-lg">
-            <h3 className="mb-6 text-center text-gray-900">Pourquoi Choisir SoussTech ?</h3>
+            <h3 className="mb-6 text-center text-gray-900">Pourquoi Choisir SajiTech ?</h3>
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center text-center">

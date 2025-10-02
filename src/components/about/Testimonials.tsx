@@ -15,7 +15,7 @@ const Testimonials = () => {
       name: "Fatima Zahraoui",
       role: "Propriétaire de villa",
       location: "Casablanca",
-      content: "L'installation FTTR de SoussTech a révolutionné notre quotidien ! Internet ultra-rapide dans toutes les pièces sans aucun perçage. L'équipe est professionnelle et l'installation a été réalisée en une matinée. Parfait !",
+      content: "L'installation FTTR de SajiTech a révolutionné notre quotidien ! Internet ultra-rapide dans toutes les pièces sans aucun perçage. L'équipe est professionnelle et l'installation a été réalisée en une matinée. Parfait !",
       rating: 5,
       service: "FTTR",
       avatar: "FZ"
@@ -24,7 +24,7 @@ const Testimonials = () => {
       name: "Ahmed El Fassi",
       role: "Gérant de restaurant",
       location: "Marrakech",
-      content: "Les caméras de surveillance installées par SoussTech nous donnent une tranquillité d'esprit totale. La qualité d'image est exceptionnelle et l'application mobile très intuitive. Support technique toujours disponible.",
+      content: "Les caméras de surveillance installées par SajiTech nous donnent une tranquillité d'esprit totale. La qualité d'image est exceptionnelle et l'application mobile très intuitive. Support technique toujours disponible.",
       rating: 5,
       service: "Sécurité",
       avatar: "AE"
@@ -33,7 +33,7 @@ const Testimonials = () => {
       name: "Sara Benani",
       role: "Architecte d'intérieur",
       location: "Rabat",
-      content: "La solution Smart Home de SoussTech s'intègre parfaitement dans mes projets. Mes clients adorent pouvoir contrôler éclairage, chauffage et sécurité depuis leur smartphone. Installation invisible et très esthétique.",
+      content: "La solution Smart Home de SajiTech s'intègre parfaitement dans mes projets. Mes clients adorent pouvoir contrôler éclairage, chauffage et sécurité depuis leur smartphone. Installation invisible et très esthétique.",
       rating: 5,
       service: "Smart Home",
       avatar: "SB"
@@ -42,7 +42,7 @@ const Testimonials = () => {
       name: "Youssef Alaoui",
       role: "Directeur IT, Maroc Telecom",
       location: "Rabat",
-      content: "SoussTech a optimisé notre infrastructure réseau et intégré des solutions IoT innovantes. Leur expertise technique est remarquable et le support 24/7 nous assure une continuité de service parfaite.",
+      content: "SajiTech a optimisé notre infrastructure réseau et intégré des solutions IoT innovantes. Leur expertise technique est remarquable et le support 24/7 nous assure une continuité de service parfaite.",
       rating: 5,
       service: "Réseaux IT",
       avatar: "YA"
@@ -51,7 +51,7 @@ const Testimonials = () => {
       name: "Khadija Mansouri",
       role: "Particulier",
       location: "Agadir",
-      content: "Installation domotique complète réalisée par SoussTech. Automatisation parfaite, économies d'énergie visibles dès le premier mois. L'équipe a su s'adapter à nos besoins spécifiques. Très recommandé !",
+      content: "Installation domotique complète réalisée par SajiTech. Automatisation parfaite, économies d'énergie visibles dès le premier mois. L'équipe a su s'adapter à nos besoins spécifiques. Très recommandé !",
       rating: 5,
       service: "Domotique",
       avatar: "KM"

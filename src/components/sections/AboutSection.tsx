@@ -56,7 +56,7 @@ const AboutSection = () => {
             variants={itemVariants}
             className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
           >
-            Depuis plus de 5 ans, SoussTech accompagne particuliers et entreprises dans leur transformation numérique et l’installation de solutions connectées. Notre expertise en FTTR, domotique et sécurité intelligente fait de nous un leader des solutions connectées au Maroc.
+            Depuis plus de 5 ans, SajiTech accompagne particuliers et entreprises dans leur transformation numérique et l’installation de solutions connectées. Notre expertise en FTTR, domotique et sécurité intelligente fait de nous un leader des solutions connectées au Maroc.
           </motion.p>
         </motion.div>
 
@@ -100,7 +100,7 @@ const AboutSection = () => {
             Notre Mission et Expertise
           </h3>
           <p className="text-xl text-gray-200 font-medium mb-12 text-center">
-            Chez SoussTech, nous rendons les technologies intelligentes accessibles et fiables pour tous au Maroc. Chaque espace mérite d’être connecté, sécurisé et optimisé, c’est pourquoi nous accompagnons nos clients de la conception à l’installation avec des solutions sur mesure, performantes et durables. Notre équipe d’experts met son savoir-faire au service de chaque projet en garantissant une expertise technique certifiée, des solutions personnalisées, une installation professionnelle ainsi qu’un support client réactif et inclus.
+            Chez SajiTech, nous rendons les technologies intelligentes accessibles et fiables pour tous au Maroc. Chaque espace mérite d’être connecté, sécurisé et optimisé, c’est pourquoi nous accompagnons nos clients de la conception à l’installation avec des solutions sur mesure, performantes et durables. Notre équipe d’experts met son savoir-faire au service de chaque projet en garantissant une expertise technique certifiée, des solutions personnalisées, une installation professionnelle ainsi qu’un support client réactif et inclus.
           </p>
           {/* Standardized Image Gallery */}
           <motion.div

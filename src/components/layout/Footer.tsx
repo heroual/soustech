@@ -15,13 +15,13 @@ const Footer = () => {
               <div className="relative w-12 h-12 rounded-xl overflow-hidden">
                 <Image
                   src="/images/logo.png"
-                  alt="SoussTech Logo"
+                  alt="SajiTech Logo"
                   width={48}
                   height={48}
                   className="w-full h-full object-contain bg-white p-1 rounded-xl"
                 />
               </div>
-              <span className="text-2xl font-bold font-poppins text-left">SoussTech</span>
+              <span className="text-2xl font-bold font-poppins text-left">SajiTech</span>
             </div>
             <p className="text-gray-300 text-lg leading-relaxed max-w-md text-left">
               Expert en technologies intelligentes au Maroc.
@@ -104,13 +104,13 @@ Nous transformons vos maisons et entreprises en espaces connectés, sécurisés 
                 <span className="text-lg">WhatsApp</span>
               </a>
               <a 
-                href="mailto:contact@soustech.ma" 
+                href="mailto:contact@sajitech.ma" 
                 className="flex items-center space-x-3 text-gray-300 hover:text-primary-light transition-colors duration-300 group text-left"
               >
                 <div className="bg-gray-700 group-hover:bg-primary p-2 rounded-lg transition-colors duration-300">
                   <Mail className="h-4 w-4" />
                 </div>
-                <span className="text-lg">contact@soustech.ma</span>
+                <span className="text-lg">contact@sajitech.ma</span>
               </a>
               <div className="flex items-start space-x-3 text-gray-300 text-left">
                 <div className="bg-gray-700 p-2 rounded-lg">
@@ -129,7 +129,7 @@ Nous transformons vos maisons et entreprises en espaces connectés, sécurisés 
           <div className="flex flex-col items-center space-y-4 lg:space-y-0">
             <p className="text-gray-300 text-lg text-center">
               Créé par <span className="text-white font-semibold">Elheroual Salah Eddine</span>
-              <span className="ml-4">© 2025 SoussTech. Tous droits réservés.</span>
+              <span className="ml-4">© 2025 SajiTech. Tous droits réservés.</span>
             </p>
           </div>
         </div>

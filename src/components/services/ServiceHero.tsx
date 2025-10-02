@@ -45,7 +45,7 @@ const ServiceHero = () => {
           className="text-xl text-gray-200 font-medium max-w-3xl mx-auto mb-8"
         >
           Des technologies de pointe pour transformer votre maison ou votre entreprise en un espace connecté, sécurisé et intelligent.
-        Avec SoussTech, bénéficiez de solutions fiables, esthétiques et performantes, conçues pour répondre aux besoins du quotidien au Maroc.
+        Avec SajiTech, bénéficiez de solutions fiables, esthétiques et performantes, conçues pour répondre aux besoins du quotidien au Maroc.
         </motion.p>
 
         

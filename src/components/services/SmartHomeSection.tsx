@@ -284,7 +284,7 @@ const SmartHomeSection = () => {
             <p className="mb-4">Transformez votre quotidien avec une solution domotique sur-mesure.</p>
             <p className="mb-4">Nos experts vous accompagnent de la conception à l’installation pour créer une maison connectée, sécurisée et confortable.</p>
             <p className="mb-4">Profitez d’une installation professionnelle, d’une formation complète à l’utilisation et d’un support technique réactif.</p>
-            <p>Avec SoussTech, vous bénéficiez de technologies fiables, adaptées à vos besoins et garanties pour durer.</p>
+            <p>Avec SajiTech, vous bénéficiez de technologies fiables, adaptées à vos besoins et garanties pour durer.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

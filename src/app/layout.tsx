@@ -17,7 +17,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "SoussTech - Solutions Technologiques Intelligentes",
+  title: "SajiTech - Solutions Technologiques Intelligentes",
   description: "Spécialiste en FTTR, Smart Home, Caméras de surveillance, Réseaux & IT. Transformez votre espace en environnement connecté et sécurisé.",
   keywords: "FTTR, Smart Home, Caméras surveillance, Réseaux IT, Domotique, Fibre optique, IoT",
   icons: {
