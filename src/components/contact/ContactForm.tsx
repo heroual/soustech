@@ -293,12 +293,13 @@ const ContactForm = () => {
                 </div>
               </div>
 
+
               {/* Information Panel */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="bg-black text-white mt-16"
+                className="bg-black text-white mt-16 rounded-3xl shadow-xl p-8 card-hover-effect"
               >
                 <div className="grid md:grid-cols-2 gap-8 container-padding max-w-7xl mx-auto">
                   {/* Process */}

@@ -66,6 +66,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* Ensure no horizontal scrollbar from full-bleed */
 }
 
 /* Mobile-first responsive optimizations */
@@ -81,9 +82,9 @@ button, a, input, select, textarea {
 }
 
 /* Prevent horizontal scroll on mobile */
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 /* Better mobile image performance */
 img {
@@ -610,4 +611,10 @@ textarea:focus-visible {
   h3 {
     @apply text-2xl font-bold font-poppins text-[#2B3A8A] md:text-3xl;
   }
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  position: relative;
 }
