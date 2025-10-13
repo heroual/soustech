@@ -3,12 +3,29 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { MapPin, Calendar, Users, Zap, Home, Shield, Network, Eye, ExternalLink } from 'lucide-react';
+import { MapPin, Calendar, Users, Zap, Home, Shield, Network, Eye } from 'lucide-react';
+
+interface Project {
+  id: number;
+  title: string;
+  category: string;
+  location: string;
+  date: string;
+  duration: string;
+  client: string;
+  description: string;
+  features: string[];
+  image: string;
+  color: string;
+  icon: React.ElementType;
+  results: string;
+  satisfaction: string;
+}
 
 const ProjectsGallery = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const projects = [
     {
@@ -142,8 +159,7 @@ const ProjectsGallery = () => {
             Projets Récents & Réalisations
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez nos projets les plus récents et les solutions innovantes 
-            que nous avons mises en place pour nos clients.
+            Découvrez comment nous avons transformé les maisons et bureaux de nos clients avec des solutions innovantes, fiables et sur-mesure.
           </p>
         </motion.div>
 

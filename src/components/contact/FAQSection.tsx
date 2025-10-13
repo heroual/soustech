@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { ChevronDown, ChevronUp, HelpCircle, Clock, CreditCard, Shield, Wrench } from 'lucide-react';
+import { ChevronDown, ChevronUp, HelpCircle, CreditCard, Shield, Wrench } from 'lucide-react';
 
 const FAQSection = () => {
   const ref = useRef(null);
@@ -17,16 +17,16 @@ const FAQSection = () => {
       color: "from-blue-500 to-blue-400",
       faqs: [
         {
-          question: "Quels sont vos délais d'intervention ?",
-          answer: "Nous proposons des devis sous 24h et pouvons généralement intervenir dans la semaine. Pour les urgences, nous avons un service d'intervention sous 4h."
+          question: "Quels sont vos délais d’intervention ?",
+          answer: "Nos équipes Sajitech interviennent rapidement à Agadir et alentours : 24-48h pour projets standards, et sous 4h pour urgences."
         },
         {
           question: "Dans quelles zones intervenez-vous ?",
-          answer: "Nous couvrons toute l'Île-de-France (75, 77, 78, 91, 92, 93, 94, 95). Le déplacement pour un devis sur site est gratuit."
+          answer: "Nous couvrons tout le Maroc, principalement Agadir, Taroudant, Aït Melloul, Inezgane, Ouled Teima et Tiznit."
         },
         {
           question: "Proposez-vous des devis gratuits ?",
-          answer: "Oui, tous nos devis sont gratuits et sans engagement. Nous incluons également une consultation technique détaillée."
+          answer: "Oui, tous nos devis sont gratuits et sans engagement, avec étude détaillée sous 24h."
         }
       ]
     },
@@ -36,16 +36,16 @@ const FAQSection = () => {
       color: "from-blue-600 to-blue-500",
       faqs: [
         {
-          question: "L'installation FTTR nécessite-t-elle des perçages ?",
-          answer: "Non ! Notre solution FTTR est conçue pour être installée sans aucun perçage, préservant ainsi l'esthétique de votre intérieur, particulièrement important dans les appartements haussmanniens."
+          question: "L’installation FTTR nécessite-t-elle des perçages ?",
+          answer: "Non, le FTTR s’installe sans perçage visible, avec un câblage discret et esthétique."
         },
         {
           question: "Combien de temps dure une installation ?",
-          answer: "Cela dépend du projet : FTTR (1 jour), Smart Home (2-3 jours), Sécurité (1-2 jours). Nous vous donnons un planning précis lors du devis."
+          answer: "La plupart des installations sont terminées en une seule journée, propre et rapide."
         },
         {
           question: "Que se passe-t-il si je ne suis pas satisfait ?",
-          answer: "Nous offrons une garantie satisfaction. Si l'installation ne répond pas à vos attentes, nous effectuons les modifications nécessaires sans frais supplémentaires."
+          answer: "Nous intervenons gratuitement sous 24h pour ajuster l’installation, avec garantie satisfaction."
         }
       ]
     },
@@ -56,15 +56,15 @@ const FAQSection = () => {
       faqs: [
         {
           question: "Quels sont vos moyens de paiement ?",
-          answer: "Nous acceptons les virements bancaires, chèques, cartes bancaires et paiements échelonnés. Possibilité de paiement en 3x sans frais."
+          answer: "Espèces, virement bancaire, chèque ou paiement mobile, selon le projet."
         },
         {
           question: "Y a-t-il des frais cachés ?",
-          answer: "Non, tous nos tarifs sont transparents. Le devis inclut matériel, installation, mise en service et formation. Aucun frais supplémentaire."
+          answer: "Non, nos tarifs sont transparents dès le devis initial, aucun supplément sans accord."
         },
         {
           question: "Proposez-vous des tarifs préférentiels ?",
-          answer: "Oui, nous offrons des remises pour les projets combinés (ex: FTTR + Smart Home) et des tarifs dégressifs pour les professionnels."
+          answer: "Oui, réductions pour entreprises, hôtels, cliniques et nouveaux clients, avec packs sur mesure."
         }
       ]
     },
@@ -75,15 +75,15 @@ const FAQSection = () => {
       faqs: [
         {
           question: "Quelle garantie offrez-vous ?",
-          answer: "Garantie installation 10 ans, garantie matériel selon constructeur (2-5 ans), et garantie satisfaction 30 jours. Support technique inclus."
+          answer: "Nos installations bénéficient de garantie constructeur jusqu’à 10 ans et garantie Sajitech installation."
         },
         {
           question: "Le support technique est-il payant ?",
-          answer: "Le support technique est inclus la première année. Ensuite, contrats de maintenance disponibles ou support ponctuel selon besoin."
+          answer: "Non, le support est inclus 7j/7, via téléphone, WhatsApp ou email, réponse <5 min."
         },
         {
           question: "Que faire en cas de panne ?",
-          answer: "Contactez notre hotline 24/7. Diagnostic à distance gratuit, puis intervention sur site si nécessaire. Temps de réponse garanti selon votre contrat."
+          answer: "Contactez notre support 24/7 à Agadir, diagnostic à distance et intervention sur site sous 4h si nécessaire."
         }
       ]
     }
@@ -180,9 +180,9 @@ const FAQSection = () => {
           className="text-center mt-16"
         >
           <div className="bg-gray-100 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">Vous avez d'autres questions ?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">Vous avez d&apos;autres questions ?</h3>
             <p className="text-xl text-gray-900 font-medium mb-6 text-center">
-              Notre équipe d'experts est là pour répondre à toutes vos interrogations spécifiques.
+              Notre équipe d&apos;experts est là pour répondre à toutes vos interrogations spécifiques.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -58,7 +58,7 @@ const ContactForm = () => {
       });
 
       if (response.ok) {
-        alert('Merci ! Votre demande a été envoyée. Nous vous recontacterons sous 24h.');
+        alert("Merci ! Votre demande a été envoyée. Nous vous recontacterons sous 24h.");
         setFormData({
           name: '',
           email: '',
@@ -70,11 +70,11 @@ const ContactForm = () => {
           urgency: 'normal'
         });
       } else {
-        alert('Une erreur s\'est produite. Veuillez réessayer.');
+        alert("Une erreur s'est produite. Veuillez réessayer.");
       }
     } catch (error) {
       console.error(error);
-      alert('Une erreur s\'est produite. Veuillez réessayer.');
+      alert("Une erreur s'est produite. Veuillez réessayer.");
     } finally {
       setIsSubmitting(false);
     }
@@ -124,13 +124,13 @@ const ContactForm = () => {
                   </p>
                 </motion.div>
       
-                <div className="grid lg:grid-cols-1 gap-12">
+                <div className="grid lg:grid-cols-1 gap-12 max-w-3xl mx-auto">
                   {/* Form */}
                   <motion.div
                     variants={containerVariants}
                     initial="hidden"
                     animate={isInView ? "visible" : "hidden"}
-                    className="bg-white rounded-3xl shadow-xl p-8 border border-gray-200"
+                    className="bg-white rounded-3xl shadow-xl p-8 border border-gray-200 w-full"
                   >
                     <form onSubmit={handleSubmit} className="space-y-6">
                       {/* Personal Information */}
